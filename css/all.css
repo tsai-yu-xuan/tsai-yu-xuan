@@ -410,6 +410,26 @@ margin-bottom: 10px;
   fill: #f9f4ea !important;
   
 }
+
+.link-btn{
+  display: block;
+  /* width: 120px; */
+  font-weight: 400;
+  height: 40px;
+  line-height: 40px;
+  border: 1px solid #000;
+  border-radius: 50px;
+  text-align: center;
+  margin-bottom: 20px;
+  margin-right: 20px;
+  padding: 0 20px;
+  text-decoration: none;
+  color: #5b5b5b;
+}
+.link-btn:hover{
+  background-color: rgba(156, 158, 128,0.5) !important;
+  /* color: #f9f4ea; */
+}
 /* 
 奶白色#f9f4ea
 棕色 #cdad85 
