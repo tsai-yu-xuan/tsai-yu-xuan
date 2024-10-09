@@ -380,6 +380,7 @@ margin-bottom: 10px;
 .footer{
   background: #5b5b5b;
   color: #f9f4ea !important;
+  margin-top: 150px !important;
 }
 .footer-contact{
   width: 280px !important;

@@ -20,6 +20,10 @@
     rel="stylesheet">
   <!-- fancybox燈箱效果 CSS -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.css" />
+  <!-- cdn JS -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <!-- cdn CSS -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 
 <body>
@@ -51,15 +55,13 @@
     <div class="d-flex hello-body text-English row " id="HELLOW">
       <div class="col-lg-12  col-xl-7">
         <div class="container-right-top">
-          <h1 class="yu-xuan ">Hi I’m Yu-Xuan!</h1>
+          <h1 class="yu-xuan" data-aos="fade-up">Hi I’m Yu-Xuan!</h1>
           <h2 class="yu-xuan-h2 text-chinese">我是 前端網頁設計工程師<br>
             充滿熱忱的前端開發者，具設計背景，融合創意與技術於開發中</h2>
         </div>
         <div class="row ">
           <div class="col-6 m-auto skill-button-div">
-            <a href="#WORKS" class="skill-button">作品集
-
-            </a>
+            <a href="#WORKS" class="skill-button">作品集</a>
           </div>
           <div class="col-6 m-auto skill-button-div">
             <a href="tel:+886-986881609" class="skill-button">聯絡我
@@ -90,7 +92,7 @@
       </div>
       <div class="col-12 col-lg-8 m-auto">
         <div class="col-12  card text-chinese">
-          <h1 class="card-header">ABOUT</h1>
+          <h1 class="card-header" data-aos="fade-left">ABOUT</h1>
           <div class="card-body">
             <h5 class="card-title">您好，我是蔡雨諠 </h5>
             <p class="card-text">
@@ -231,7 +233,7 @@
     <!--  作品集 WORKS-->
     <div class="works-body row text-chinese" id="WORKS">
       <div class="d-flex justify-content-center mb-5">
-        <h1 class="card-header">作品集 WORKS</h1>
+        <h1 class="card-header" data-aos="flip-up" data-aos-duration="2000">作品集 WORKS</h1>
       </div>
       <!-- 專題 - 鼠兔永恆居所 -->
       <div class="card mb-3 ">
@@ -464,57 +466,40 @@
       <!-- layout 模擬其他網頁 ( 練習網頁刻板技巧 ) -->
       <div class="card mb-3 ">
         <div class="row g-0">
-          <div class="col-md-7 works-Adopt">
+          <div class="col-md-7 works-ehp">
             <!-- 影片縮圖或按鈕 -->
-            <a data-fancybox="video" href="./video/WORKS-Adopt Us.mp4">
-              <video src="./video/WORKS-Adopt Us.mp4" autoplay></video>
+            <a data-fancybox="video" href="./video/WORKS-layout.mp4">
+              <video src="./video/WORKS-layout.mp4" autoplay></video>
             </a>
           </div>
           <div class="col-md-5">
             <div class="card-body text-chinese">
-              <h5 class="card-title">layout - 模擬其他網頁 ( 練習網頁刻板技巧 )</h5>
-              <p class="card-text">尋找政府開放 JSON 檔案並串 api 使用 axios 來進行 get 取資料 <br>
-                遊戲頁面所使用之圖片僅作為學習與課堂作業用途，無任何商業目的。所有圖片版權歸原作者所有，若有侵權請聯繫我們以立即處理。
+              <h5 class="card-title">layout - 模擬其他網頁 ( 練習刻板技巧 )</h5>
+              <p class="card-text">模擬優秀網站練習刻板技巧 <br>
+                頁面所使用之圖片僅作為學習與課堂作業用途，無任何商業目的。所有圖片版權歸原作者所有，若有侵權請聯繫我們以立即處理。
               </p>
               <!-- line 機器人 下拉選單  -->
               <div class="accordion accordion-flush " id="accordionFlushExample">
-                <div class="accordion-item ">
-                  <h2 class="accordion-header" id="flush-headingOne">
-                    <button class="accordion-button collapsed text-chinese" type="button" data-bs-toggle="collapse"
-                      data-bs-target="#flush-collapseFour-one" aria-expanded="false" aria-controls="flush-collapseOne">
-                      發想動機 <span>領養寵物</span>
-                    </button>
-                  </h2>
-                  <div id="flush-collapseFour-one" class="accordion-collapse collapse"
-                    aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
-                    <div class="accordion-body"><b>領養代替購買，把愛傳出去</b> <br>
-                      送養資訊利用使用率最高的 Line 來串接成官方帳號，讓讀取率及使用度提升<br>
-                      簡易操作讓撥打電話及地址訊息都能以按鈕的方式來簡易操作<br>
 
-                    </div>
-                  </div>
-                </div>
                 <div class="accordion-item">
                   <h2 class="accordion-header" id="flush-headingTwo">
                     <button class="accordion-button collapsed text-chinese" type="button" data-bs-toggle="collapse"
                       data-bs-target="#flush-collapseFour-two" aria-expanded="false" aria-controls="flush-collapseTwo">
-                      使用者前台 <span>前台功能</span><span>使用技術</span>
+                      模擬心得 <span>前台功能</span><span>使用技術</span>
                     </button>
                   </h2>
                   <div id="flush-collapseFour-two" class="accordion-collapse collapse"
                     aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
                     <div class="accordion-body">
                       <ul>
-                        <li>傳送指定訊息即可觸發圖文</li>
-                        <li>利用圖文選單發送關鍵字訊息，讓版面更簡單</li>
+                        <li>從模擬中學習切版技巧，是在開始學習的歷程上至關重要的一步</li>
+                        <li>透過實際操作與反覆練習，不僅能快速掌握基本概念，還能培養應對不同版面設計需求的靈活度</li>
                       </ul>
                       <h6>使用技術</h6>
                       <ul>
-                        <li>串 api </li>
-                        <li>使用 axios 來進行 GET 取得資料</li>
-                        <li>使用 axios 來進行 POST 創建資料</li>
-                        <li>使用 axios 來進行 PUT 更新資料</li>
-                        <li>使用 axios 來進行 DELETE 刪除資料</li>
+                        <li>使用 HTML </li>
+                        <li>使用 CSS </li>
+                        <li>使用 AOS 動畫</li>
                       </ul>
                     </div>
                   </div>
@@ -534,12 +519,13 @@
     <!--  技能 Skills-->
     <div class="skill-body row text-chinese" id="SKILL">
       <div class="d-flex justify-content-center">
-        <h1 class="card-header  mb-5">技能 SKILL</h1>
+        <h1 class="card-header  mb-5" data-aos="flip-up" data-aos-duration="2000"
+          data-aos-anchor-placement="center-center">技能 SKILL</h1>
         <!-- <h1 class="card-header skill-text">SKILL</h1> -->
       </div>
       <div class="row">
         <div class="col-xl-4">
-          <div class="card">
+          <div class="card" data-aos="zoom-in" data-aos-duration="2000">
             <div class="skill-title p-3 text-center">
               <svg xmlns="http://www.w3.org/2000/svg" width="80" height="80" fill="currentColor"
                 class="bi bi-filetype-html" viewBox="0 0 16 16">
@@ -636,7 +622,7 @@
           </div>
         </div>
         <div class="col-xl-4">
-          <div class="card">
+          <div class="card" data-aos="zoom-in" data-aos-duration="2300">
             <div class="skill-title p-3 text-center">
               <svg xmlns="http://www.w3.org/2000/svg" width="80" height="80" fill="currentColor"
                 class="bi bi-file-earmark-code" viewBox="0 0 16 16">
@@ -702,7 +688,7 @@
           </div>
         </div>
         <div class="col-xl-4">
-          <div class="card">
+          <div class="card" data-aos="zoom-in" data-aos-duration="2000">
             <div class="skill-title p-3 text-center">
               <svg xmlns="http://www.w3.org/2000/svg" width="80" height="80" fill="currentColor" class="bi bi-brush"
                 viewBox="0 0 16 16">
@@ -782,12 +768,13 @@
         </div>
       </div>
     </div>
-
   </div>
+
+
   <!-- footer -->
   <div class="footer text-English">
     <div class="row">
-      <div class="col d-flex justify-content-center pt-5 pb-5">CONTACT ME</div>
+      <div class="col d-flex justify-content-center pt-5 pb-5 ">CONTACT ME</div>
     </div>
     <div class="row ">
       <div class="col footer-contact col-12 d-flex justify-content-between pb-5">
@@ -848,6 +835,9 @@
   <!-- fancybox燈箱效果 -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script>
 
+  <script>
+    AOS.init(); 
+  </script>
 </body>
 
 </html>
