@@ -63,4 +63,4 @@
 [![tsai-yu-xuan's GitHub | Stats](https://stats.quira.sh/tsai-yu-xuan/github?theme=light)](https://quira.sh?utm_source=widgets&utm_campaign=tsai-yu-xuan)
 
 
-![github](https://img.shields.io/badge/GitHub-000000?style=for-the-badge&logo=GitHub&logoColor=white)
+<a href="https://github.com/tsai-yu-xuan">![github](https://img.shields.io/badge/GitHub-000000?style=for-the-badge&logo=GitHub&logoColor=white) </a>
