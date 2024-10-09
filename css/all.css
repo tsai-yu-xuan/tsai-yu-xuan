@@ -1,0 +1,419 @@
+/* 
+奶白色#f9f4ea
+棕色 #cdad85 
+紅棕 #c47457
+淺綠 #9c9e8o
+深綠 #605f4b
+黃咖 #b68036
+*/
+
+
+/* 英文字體 */
+.text-English {
+  font-family: "Kanit", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  color: #2d2d2d
+}
+
+
+.text-chinese{
+  font-family: "IBM Plex Sans JP", sans-serif,;
+  font-weight: 200;
+  font-style: normal;
+  /* font-style: normal; */
+  letter-spacing: 0.08em;
+  color: #5b5b5b !important;
+}
+
+body{
+  width: 100%;
+  background:#f9f4ea !important;
+}
+/* 網頁寬度 */
+.box{
+  width: 75%;
+  background:#f9f4ea;
+}
+/* 導覽列 */
+.navbar{
+  background:#f9f4ea !important;
+}
+.navbar-brand img {
+  width: 120px;
+}
+.navbar-collapse{
+  flex-grow: 0 !important;
+}
+.container-fluid{
+  width: 136px !important;
+  margin: 0 !important;
+}
+.nav-body {
+  /* width: 100%; */
+  font-size: 1rem;
+  /* background: #000; */
+  .nav-link{
+    padding-right:20px !important;
+  }
+
+}
+.navbar-toggler{
+  margin-right: 20px !important;
+}
+/*  HELLOW 圖文區  */
+.hello-body{
+  width: 100% !important;
+  margin: 0 auto!important;
+  padding-top: 15%;
+  padding-left: 12% !important;
+  padding-right: 12% !important;
+  padding-bottom: 6%;
+}
+@media  (min-width:1200px){
+  .skill-img{
+    position: relative;
+    img{
+    width: 520px !important;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    transform: translate(15%,10%);
+    }
+  }
+}
+
+@media (max-width: 1199px) {
+  .skill-img img{
+    width: 520px !important;
+    height: 397px !important;
+    /* position: absolute; */
+    right: 0;
+    bottom: 0;
+    /* transform: translate(5%,15%); */
+    }
+  }
+
+  @media (max-width: 992px) {
+    .skill-img img{
+      width: 100% !important;
+      height: 100% !important;
+      /* position: absolute; */
+      right: 0;
+      bottom: 0;
+      /* transform: translate(5%,15%); */
+      }
+    }
+
+
+.navbar{
+  position: fixed !important;
+  width: 75% !important;
+  z-index: 1000;
+}
+
+/* Hi I’m Yu-Xuan!  */
+.container-right-top{
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+.yu-xuan{
+  font-size: 55px !important;
+  margin-bottom: 28px;
+  /* font-size: 50px; */
+  font-weight: 700;
+  background: url(../img/yu-xuan-bg-img.jpg);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent; /* 這個屬性確保文字透明化 */
+  background-size:auto; /* 調整背景圖片的大小 */
+  background-repeat: no-repeat; /* 防止背景圖片重複 */
+
+}
+.yu-xuan-h2{
+  font-size: 15px;
+  font-family:Montserrat, ;
+  line-height: 35px;
+}
+
+.skill-button-div{
+  z-index: 100;
+}
+
+.skill-button{
+  width: 100%;
+  display: inline-block;
+ padding: 15px 25px;
+  border: 1px solid #2d2d2d;
+  border-radius: 8px;
+  /* box-shadow: 2px 2px #2d2d2d; */
+  cursor: pointer;
+  text-decoration: none;
+  color: #2d2d2d;
+  font-size: 15px;
+text-align: center;
+line-height: 45px;
+}
+
+.skill-button:hover{
+  background: #2d2d2d;
+  color: aliceblue;
+
+}
+
+/* ------------關於我 ABOUT------------------- */
+
+/*  ABOUT關於我 */
+.about-body{
+  width: 100% !important;
+  margin: 0 auto!important;
+  padding-top: 15%;
+  padding-left: 3% !important;
+  padding-right: 3% !important;
+  padding-bottom: 6%;
+}
+
+  .about-body .img{
+    background: url(../img/photo.jpg) no-repeat ;
+    background-size: cover;
+    min-height: 350px;
+    text-align: center;
+    border-radius: 8px;
+    padding: 20px !important;
+  }
+
+
+@media (max-width:992px) {
+  .about-body .img{
+    background: url(../img/photo.jpg) no-repeat center center;
+    background-size: cover;
+    min-height: 500px;
+  }
+}
+
+.card{
+  border: none !important;
+  background: rgba(255, 255, 255, 0) !important;
+}
+.card-header{
+  font-size: 50px;
+  font-weight: 700;
+  background: url(../img/bg-img.jpg);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent; /* 這個屬性確保文字透明化 */
+  background-size: cover; /* 調整背景圖片的大小 */
+  background-repeat: no-repeat; /* 防止背景圖片重複 */
+}
+.about-body .btn{
+  background: #b68036;
+  color: #f9f4ea;
+}
+.about-body .btn:hover{
+  background: #f9f4ea;
+  color: #b68036;
+  border: 1px solid #5b5b5b;
+  transition: 0.5s;
+}
+/* 履歷 */
+.modal{
+  --bs-modal-width: 650px !important;
+}
+.modal-body h4{
+color: #cdad85 ;
+margin-bottom: 15px;
+}
+.resume{
+  margin-left: 10px;
+  border-left: 2px solid #5b5b5b;
+  padding-left: 8px;
+  margin-bottom: 10px;
+}
+
+
+.resume .date{
+  width: 200px;
+  font-size: 12px;
+  font-weight: 500;
+  text-align: center;
+  line-height: 25px;
+  color: #f9f4ea;
+  background: #9c9e80 ;
+  border-radius:6px ;
+}
+
+.resume-a{
+  text-decoration: none !important;
+  /* line-height: 80p !important; */
+  color:rgb(47, 47, 126) !important;
+}
+
+.resume>p{
+  display: inline-block;
+  padding-left: 20px;
+  margin-bottom: 0 !important;
+}
+.contact{
+  padding-top: 20px;
+}
+
+.email,
+.tel{
+  color: #b68036 !important;
+  padding-left: 10px;
+}
+
+
+
+/* 作品集 */
+.works-body .card{
+border: 1px solid #2d2d2d !important;
+padding: 0px 15px !important;
+}
+.works-body .card-body{
+  padding: 15px  0px !important;
+  }
+  .card-title{
+    font-size: 24px;
+    margin-bottom: 15px !important;
+  }
+  .works-ehp{
+    padding-top: 15px !important;
+    padding-bottom: 15px !important;
+    padding-right: 15px !important;
+    a{
+      video{
+        width: 100%;
+      }
+    }
+  }
+  .works-Adopt{
+    padding-top: 15px !important;
+    padding-bottom: 15px !important;
+    padding-right: 15px !important;
+    text-align: center;
+    a{
+      video{
+        width: 40%;
+        text-align: center;
+      }
+    }
+  }
+
+/* 作品集  下拉選單 */
+.accordion-button{
+  border: 1px solid #2d2d2d !important;
+  border-radius: 5px !important;
+  margin-bottom: 3px;
+  background-color: #f9f4ea !important;
+  padding: 10px 16px!important;
+  span{
+    font-weight: 200;
+    font-size: 15px;
+    border: 1px solid #2d2d2d !important;
+  border-radius: 50px !important;
+  padding: 2px 8px;
+  margin-left:8px;
+  }
+}
+.accordion-body{
+  font-size: 14px !important;
+  border: 1px solid #2d2d2d !important;
+  border-radius: 5px !important;
+  margin-bottom: 3px;
+  span{
+    color: #c47457;
+    font-weight: 500;
+  }
+}
+.accordion-button:focus {
+  box-shadow: 0 0 0 0.25rem rgba(83, 83, 80, 0.25) !important;
+}
+
+.accordion-button:hover{
+/* box-shadow: 0 0 0 0.25rem rgba(83, 83, 80, 0.25) !important; */
+background-color: rgba(156, 158, 128,0.5) !important;
+
+}
+
+
+/*  技能 Skills  */
+.works-body,
+.skill-body{
+  width: 100% !important;
+  margin: 0 auto!important;
+  padding-top: 15%;
+  padding-left: 0% !important;
+  padding-right: 0% !important;
+  padding-bottom: 6%;
+}
+
+.skill-body .card{
+border: 1px solid #000 !important;
+margin-bottom: 10px;
+/* background: #424530 !important; */
+}
+.skill-title{
+  color: #5b5b5b !important;
+  h4{
+    padding-top: 20px;
+  }
+}
+.skill-body .card-body{
+  text-align: start;
+  height: 300px;
+  ul{
+    display: inline-block;
+    padding-left: 40px;
+    li{
+    list-style: none;
+    
+  }
+}
+}
+.blockquote svg{
+  margin-right: 10px !important;
+}
+.blockquote li{
+  margin-bottom: 5px !important;
+}
+
+/*-------------------- footer --------------------- */
+.footer{
+  background: #5b5b5b;
+  color: #f9f4ea !important;
+}
+.footer-contact{
+  width: 280px !important;
+  /* background: #ea2323; */
+  margin: auto;
+  ;
+}
+.footer-github,
+.footer-tel,
+.footer-mail{
+  width: 50px;
+  height: 50px;
+  border: 1px solid #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-left: 0 !important;
+  border-radius: 5px !important;
+  background: #f9f4ea;
+  fill: #000 !important;
+}
+
+.footer-github:hover,
+.footer-tel:hover,
+.footer-mail:hover{
+  background: #000;
+  fill: #f9f4ea !important;
+  
+}
+/* 
+奶白色#f9f4ea
+棕色 #cdad85 
+紅棕 #c47457
+淺綠 #9c9e80
+深綠 #605f4b
+黃咖 #b68036
+*/
