@@ -418,7 +418,16 @@ body {
 
 /* 影片最大寬度 */
 .video-link {
-	max-width: 511px !important;
+	display: block; /* 讓 <a> 元素的寬度可控制 */
+	max-width: 511px;
+	width: 100%; /* 適應父層寬度 */
+	margin: 0 auto; /* 置中顯示 */
+}
+
+.video-link video {
+	width: 100%;
+	height: auto;
+	max-width: 100%;
 }
 
 /* 
