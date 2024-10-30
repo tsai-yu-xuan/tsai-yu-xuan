@@ -29,13 +29,14 @@
 <body>
   <div class="box m-auto">
     <!-- 導覽列 -->
-    <nav class="navbar navbar-expand-lg navbar-light ">
-      <div class="w-100 d-flex justify-content-between">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="#">
-            <img src="./img/nav-logo.png" alt="">
-          </a>
-        </div>
+    <nav class="navbar navbar-expand-lg navbar-light d-flex justify-content-between ">
+      <!-- <div class=""> -->
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+          <img src="./img/nav-logo.png" alt="">
+        </a>
+      </div>
+      <div class="navbar-div">
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
           aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
@@ -49,21 +50,22 @@
           </div>
         </div>
       </div>
+      <!-- </div> -->
     </nav>
 
     <!-- HELLOW 圖文區   -->
     <div class="d-flex hello-body text-English row " id="HELLOW">
-      <div class="col-lg-12  col-xl-7">
+      <div class="col-lg-12  col-xl-7 p-3">
         <div class="container-right-top">
           <h1 class="yu-xuan" data-aos="fade-up">Hi I’m Yu-Xuan!</h1>
           <h2 class="yu-xuan-h2 text-chinese">我是 前端網頁設計工程師<br>
             充滿熱忱的前端開發者，具設計背景，融合創意與技術於開發中</h2>
         </div>
-        <div class="row ">
-          <div class="col-6 m-auto skill-button-div">
+        <div class="row button-div">
+          <div class="col-6 d-flex justify-content-center skill-button-div">
             <a href="#WORKS" class="skill-button">作品集</a>
           </div>
-          <div class="col-6 m-auto skill-button-div">
+          <div class="col-6 d-flex justify-content-center skill-button-div">
             <a href="tel:+886-986881609" class="skill-button">聯絡我
               <!-- <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" fill="currentColor"
                 class="bi bi-telephone-fill" viewBox="0 0 16 16">
@@ -80,7 +82,9 @@
       <div class="col-lg-12  col-xl-5 skill-img">
         <img src="./img/Skill.png" alt="">
       </div>
+
     </div>
+
     <br>
 
     <hr>
@@ -230,128 +234,137 @@
         </div>
       </div>
     </div>
+
     <!--  作品集 WORKS-->
     <div class="works-body row text-chinese" id="WORKS">
       <div class="d-flex justify-content-center mb-5">
         <h1 class="card-header" data-aos="flip-up" data-aos-duration="2000">作品集 WORKS</h1>
       </div>
       <!-- 專題 - 鼠兔永恆居所 -->
-      <div class="card mb-3 ">
-        <div class="row g-0">
-          <div class="col-xl-7 works-ehp">
-            <!-- 影片縮圖或按鈕 -->
-            <a class="video-link" data-fancybox="video" href="./video/WORKS-EHP.mp4">
-              <video src="./video/WORKS-EHP.mp4" autoplay></video>
-            </a>
-          </div>
-          <div class="col-xl-5">
-            <div class="card-body text-chinese">
-              <h5 class="card-title">專題 - 鼠兔永恆居所</h5>
-              <div class="d-flex justify-content-end">
-                <a class="link-btn" href="https://tsai-yu-xuan.github.io/vuetify-shop-front/" target="_blank">觀看網頁<svg
-                    fill="#000000" width="20px" height="20px" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                    <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
-                    <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
-                    <g id="SVGRepo_iconCarrier">
-                      <path
-                        d="M3.624,15a8.03,8.03,0,0,0,10.619.659l5.318,5.318a1,1,0,0,0,1.414-1.414l-5.318-5.318A8.04,8.04,0,0,0,3.624,3.624,8.042,8.042,0,0,0,3.624,15Zm1.414-9.96a6.043,6.043,0,1,1-1.77,4.274A6,6,0,0,1,5.038,5.038ZM4.622,9.311a1,1,0,0,1,2,0A2.692,2.692,0,0,0,9.311,12a1,1,0,0,1,0,2A4.7,4.7,0,0,1,4.622,9.311Z">
-                      </path>
-                    </g>
-                  </svg>
-                </a>
-                <a class="link-btn" href="https://github.com/tsai-yu-xuan/vuetify-shop-front" target="_blank">公開程式碼<svg
-                    width="20px" height="20px" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
-                    <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
-                    <g id="SVGRepo_iconCarrier">
-                      <path d="M8.01005 0.858582L6.01005 14.8586L7.98995 15.1414L9.98995 1.14142L8.01005 0.858582Z"
-                        fill="#000000"></path>
-                      <path d="M12.5 11.5L11.0858 10.0858L13.1716 8L11.0858 5.91422L12.5 4.5L16 8L12.5 11.5Z"
-                        fill="#000000"></path>
-                      <path d="M2.82843 8L4.91421 10.0858L3.5 11.5L0 8L3.5 4.5L4.91421 5.91422L2.82843 8Z"
-                        fill="#000000"></path>
-                    </g>
-                  </svg>
+      <div class="row p-0 m-0 works-card mb-3 ">
+        <div class="col-12">
+          <div class="card" data-aos="zoom-in" data-aos-duration="2000">
+            <div class="row">
+              <div class="col-12 col-xl-7 works-ehp">
+                <!-- 影片縮圖或按鈕 -->
+                <a class="video-link" data-fancybox="video" href="./video/WORKS-EHP.mp4">
+                  <video src="./video/WORKS-EHP.mp4" autoplay></video>
                 </a>
               </div>
-              <p class="card-text">獨立完成專題網頁開發，從初期的主題設定、資料庫結構規劃、前端設計發想與顏色配色，並使用 Vue 框架構建網站，具備 Vue3 的基礎知識</p>
-              <!-- 專題 - 鼠兔永恆居所 下拉選單  -->
-              <div class="accordion accordion-flush " id="accordionFlushExample">
-                <div class="accordion-item ">
-                  <h2 class="accordion-header" id="flush-headingOne">
-                    <button class="accordion-button collapsed text-chinese" type="button" data-bs-toggle="collapse"
-                      data-bs-target="#flush-collapseOne-one" aria-expanded="false" aria-controls="flush-collapseOne">
-                      發想動機 <span>主題發想</span><span>新創產業</span>
-                    </button>
-                  </h2>
-                  <div id="flush-collapseOne-one" class="accordion-collapse collapse" aria-labelledby="flush-headingOne"
-                    data-bs-parent="#accordionFlushExample">
-                    <div class="accordion-body">生活型態與觀念轉變「視寵物如子女」相當盛行，<br>
-                      當心愛的寵物往生，對寵物後事也會慎重處理 <br>
-                      <br>
-                      寵物生命禮儀大多是所有寵物放一起 <br>
-                      是不是鼠兔跟狗貓放一起牠會害怕? <br>
-                      如果他們有自己的永恆住所... <br>
-                      <br>
-                      <span>於是萌生了想要專門為小動物而服務的永恆住所</span>
-                    </div>
+              <div class="col-xl-5">
+                <div class="card-body text-chinese">
+                  <h5 class="card-title">專題 - 鼠兔永恆居所</h5>
+                  <div class="d-flex justify-content-end">
+                    <a class="link-btn" href="https://tsai-yu-xuan.github.io/vuetify-shop-front/"
+                      target="_blank">觀看網頁<svg fill="#000000" width="20px" height="20px" viewBox="0 0 24 24"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                        <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                        <g id="SVGRepo_iconCarrier">
+                          <path
+                            d="M3.624,15a8.03,8.03,0,0,0,10.619.659l5.318,5.318a1,1,0,0,0,1.414-1.414l-5.318-5.318A8.04,8.04,0,0,0,3.624,3.624,8.042,8.042,0,0,0,3.624,15Zm1.414-9.96a6.043,6.043,0,1,1-1.77,4.274A6,6,0,0,1,5.038,5.038ZM4.622,9.311a1,1,0,0,1,2,0A2.692,2.692,0,0,0,9.311,12a1,1,0,0,1,0,2A4.7,4.7,0,0,1,4.622,9.311Z">
+                          </path>
+                        </g>
+                      </svg>
+                    </a>
+                    <a class="link-btn" href="https://github.com/tsai-yu-xuan/vuetify-shop-front"
+                      target="_blank">公開程式碼<svg width="20px" height="20px" viewBox="0 0 16 16" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                        <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                        <g id="SVGRepo_iconCarrier">
+                          <path d="M8.01005 0.858582L6.01005 14.8586L7.98995 15.1414L9.98995 1.14142L8.01005 0.858582Z"
+                            fill="#000000"></path>
+                          <path d="M12.5 11.5L11.0858 10.0858L13.1716 8L11.0858 5.91422L12.5 4.5L16 8L12.5 11.5Z"
+                            fill="#000000"></path>
+                          <path d="M2.82843 8L4.91421 10.0858L3.5 11.5L0 8L3.5 4.5L4.91421 5.91422L2.82843 8Z"
+                            fill="#000000"></path>
+                        </g>
+                      </svg>
+                    </a>
                   </div>
-                </div>
-                <div class="accordion-item">
-                  <h2 class="accordion-header" id="flush-headingTwo">
-                    <button class="accordion-button collapsed text-chinese" type="button" data-bs-toggle="collapse"
-                      data-bs-target="#flush-collapseOne-two" aria-expanded="false" aria-controls="flush-collapseTwo">
-                      使用者前台 <span>前台功能</span><span>使用技術</span>
-                    </button>
-                  </h2>
-                  <div id="flush-collapseOne-two" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo"
-                    data-bs-parent="#accordionFlushExample">
-                    <div class="accordion-body">
-                      <h6>前台功能</h6>
-                      <ul>
-                        <li>會員登入/註冊</li>
-                        <li>前台管理者頁面</li>
-                        <li>線上祭祀功能(互動效果)</li>
-                        <li>頁面視覺呈現、動畫效果</li>
-                      </ul>
-                      <h6>使用技術</h6>
-                      <ul>
-                        <li>使用 Vuetify 框架開發</li>
-                        <li>使用 AOS Swiper GSAP 實現動畫效果</li>
-                        <li>RWD 響應式網頁設計</li>
-                        <li>以Pinia存取使用者資訊、API回傳資料</li>
-                        <li>Vue Router 頁面切換</li>
-                        <li>axios 套件處理 AJAX</li>
-                      </ul>
+                  <p class="card-text">獨立完成專題網頁開發，從初期的主題設定、資料庫結構規劃、前端設計發想與顏色配色，並使用 Vue 框架構建網站，具備 Vue3 的基礎知識</p>
+                  <!-- 專題 - 鼠兔永恆居所 下拉選單  -->
+                  <div class="accordion accordion-flush " id="accordionFlushExample">
+                    <div class="accordion-item ">
+                      <h2 class="accordion-header" id="flush-headingOne">
+                        <button class="accordion-button collapsed text-chinese" type="button" data-bs-toggle="collapse"
+                          data-bs-target="#flush-collapseOne-one" aria-expanded="false"
+                          aria-controls="flush-collapseOne">
+                          發想動機 <span>主題發想</span><span>新創產業</span>
+                        </button>
+                      </h2>
+                      <div id="flush-collapseOne-one" class="accordion-collapse collapse"
+                        aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body">生活型態與觀念轉變「視寵物如子女」相當盛行，<br>
+                          當心愛的寵物往生，對寵物後事也會慎重處理 <br>
+                          <br>
+                          寵物生命禮儀大多是所有寵物放一起 <br>
+                          是不是鼠兔跟狗貓放一起牠會害怕? <br>
+                          如果他們有自己的永恆住所... <br>
+                          <br>
+                          <span>於是萌生了想要專門為小動物而服務的永恆住所</span>
+                        </div>
+                      </div>
                     </div>
-                  </div>
-                </div>
-                <div class="accordion-item">
-                  <h2 class="accordion-header" id="flush-headingThree">
-                    <button class="accordion-button collapsed text-chinese" type="button" data-bs-toggle="collapse"
-                      data-bs-target="#flush-collapseOne-three" aria-expanded="false"
-                      aria-controls="flush-collapseThree">
-                      管理者後台 <span>後台功能</span><span>使用技術</span>
-                    </button>
-                  </h2>
-                  <div id="flush-collapseOne-three" class="accordion-collapse collapse"
-                    aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
-                    <div class="accordion-body">
-                      <h6>後台功能</h6>
-                      <ul>
-                        <li>服務項目增改刪查</li>
-                        <li>總訂單查詢</li>
-                      </ul>
-                      <h6>使用技術</h6>
-                      <ul>
-                        <li>使用 Node.js + Express 框架</li>
-                        <li>RESTful API 進行請求</li>
-                        <li>Passport 處理身份驗證</li>
-                        <li>編碼與解碼 jwt</li>
-                        <li>MongoDB + Mongoose 套件，建立 Schema</li>
-                        <li>Cloudinary 進行雲端媒體管理</li>
-                        <li>Multer 套件處理上傳文件</li>
-                      </ul>
+                    <div class="accordion-item">
+                      <h2 class="accordion-header" id="flush-headingTwo">
+                        <button class="accordion-button collapsed text-chinese" type="button" data-bs-toggle="collapse"
+                          data-bs-target="#flush-collapseOne-two" aria-expanded="false"
+                          aria-controls="flush-collapseTwo">
+                          使用者前台 <span>前台功能</span><span>使用技術</span>
+                        </button>
+                      </h2>
+                      <div id="flush-collapseOne-two" class="accordion-collapse collapse"
+                        aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body">
+                          <h6>前台功能</h6>
+                          <ul>
+                            <li>會員登入/註冊</li>
+                            <li>前台管理者頁面</li>
+                            <li>線上祭祀功能(互動效果)</li>
+                            <li>頁面視覺呈現、動畫效果</li>
+                          </ul>
+                          <h6>使用技術</h6>
+                          <ul>
+                            <li>使用 Vuetify 框架開發</li>
+                            <li>使用 AOS Swiper GSAP 實現動畫效果</li>
+                            <li>RWD 響應式網頁設計</li>
+                            <li>以Pinia存取使用者資訊、API回傳資料</li>
+                            <li>Vue Router 頁面切換</li>
+                            <li>axios 套件處理 AJAX</li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="accordion-item">
+                      <h2 class="accordion-header" id="flush-headingThree">
+                        <button class="accordion-button collapsed text-chinese" type="button" data-bs-toggle="collapse"
+                          data-bs-target="#flush-collapseOne-three" aria-expanded="false"
+                          aria-controls="flush-collapseThree">
+                          管理者後台 <span>後台功能</span><span>使用技術</span>
+                        </button>
+                      </h2>
+                      <div id="flush-collapseOne-three" class="accordion-collapse collapse"
+                        aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body">
+                          <h6>後台功能</h6>
+                          <ul>
+                            <li>服務項目增改刪查</li>
+                            <li>總訂單查詢</li>
+                          </ul>
+                          <h6>使用技術</h6>
+                          <ul>
+                            <li>使用 Node.js + Express 框架</li>
+                            <li>RESTful API 進行請求</li>
+                            <li>Passport 處理身份驗證</li>
+                            <li>編碼與解碼 jwt</li>
+                            <li>MongoDB + Mongoose 套件，建立 Schema</li>
+                            <li>Cloudinary 進行雲端媒體管理</li>
+                            <li>Multer 套件處理上傳文件</li>
+                          </ul>
+                        </div>
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -362,92 +375,98 @@
       </div>
 
       <!-- 遊戲 - 換裝娃娃 Dress Up Paper Dolls -->
-      <div class="card mb-3 ">
-        <div class="row g-0">
-          <div class="col-xl-7 works-ehp">
-            <!-- 影片縮圖或按鈕 -->
-            <a class="video-link" data-fancybox="video" href="./video/WORKS-game.mp4">
-              <video src="./video/WORKS-game.mp4" autoplay></video>
-            </a>
-          </div>
-          <div class="col-xl-5">
-            <div class="card-body text-chinese">
-              <h5 class="card-title">遊戲 - 換裝娃娃 Dress Up Paper Dolls</h5>
-              <div class="d-flex justify-content-end">
-                <a class="link-btn" href="https://tsai-yu-xuan.github.io/game/" target="_blank">觀看網頁<svg fill="#000000"
-                    width="20px" height="20px" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                    <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
-                    <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
-                    <g id="SVGRepo_iconCarrier">
-                      <path
-                        d="M3.624,15a8.03,8.03,0,0,0,10.619.659l5.318,5.318a1,1,0,0,0,1.414-1.414l-5.318-5.318A8.04,8.04,0,0,0,3.624,3.624,8.042,8.042,0,0,0,3.624,15Zm1.414-9.96a6.043,6.043,0,1,1-1.77,4.274A6,6,0,0,1,5.038,5.038ZM4.622,9.311a1,1,0,0,1,2,0A2.692,2.692,0,0,0,9.311,12a1,1,0,0,1,0,2A4.7,4.7,0,0,1,4.622,9.311Z">
-                      </path>
-                    </g>
-                  </svg>
-                </a>
-                <a class="link-btn" href="https://github.com/tsai-yu-xuan/game" target="_blank">公開程式碼<svg width="20px"
-                    height="20px" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
-                    <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
-                    <g id="SVGRepo_iconCarrier">
-                      <path d="M8.01005 0.858582L6.01005 14.8586L7.98995 15.1414L9.98995 1.14142L8.01005 0.858582Z"
-                        fill="#000000"></path>
-                      <path d="M12.5 11.5L11.0858 10.0858L13.1716 8L11.0858 5.91422L12.5 4.5L16 8L12.5 11.5Z"
-                        fill="#000000"></path>
-                      <path d="M2.82843 8L4.91421 10.0858L3.5 11.5L0 8L3.5 4.5L4.91421 5.91422L2.82843 8Z"
-                        fill="#000000"></path>
-                    </g>
-                  </svg>
+      <div class="row p-0 m-0 works-card mb-3 ">
+        <div class="col-12">
+          <div class="card" data-aos="zoom-in" data-aos-duration="2000">
+            <div class="row">
+              <div class="col-12 col-xl-7 works-ehp">
+                <!-- 影片縮圖或按鈕 -->
+                <a class="video-link" data-fancybox="video" href="./video/WORKS-game.mp4">
+                  <video src="./video/WORKS-game.mp4" autoplay></video>
                 </a>
               </div>
+              <div class="col-xl-5">
+                <div class="card-body text-chinese">
+                  <h5 class="card-title">遊戲 - 換裝娃娃 Dress Up Paper Dolls</h5>
+                  <div class="d-flex justify-content-end">
+                    <a class="link-btn" href="https://tsai-yu-xuan.github.io/game/" target="_blank">觀看網頁<svg
+                        fill="#000000" width="20px" height="20px" viewBox="0 0 24 24"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                        <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                        <g id="SVGRepo_iconCarrier">
+                          <path
+                            d="M3.624,15a8.03,8.03,0,0,0,10.619.659l5.318,5.318a1,1,0,0,0,1.414-1.414l-5.318-5.318A8.04,8.04,0,0,0,3.624,3.624,8.042,8.042,0,0,0,3.624,15Zm1.414-9.96a6.043,6.043,0,1,1-1.77,4.274A6,6,0,0,1,5.038,5.038ZM4.622,9.311a1,1,0,0,1,2,0A2.692,2.692,0,0,0,9.311,12a1,1,0,0,1,0,2A4.7,4.7,0,0,1,4.622,9.311Z">
+                          </path>
+                        </g>
+                      </svg>
+                    </a>
+                    <a class="link-btn" href="https://github.com/tsai-yu-xuan/game" target="_blank">公開程式碼<svg
+                        width="20px" height="20px" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                        <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                        <g id="SVGRepo_iconCarrier">
+                          <path d="M8.01005 0.858582L6.01005 14.8586L7.98995 15.1414L9.98995 1.14142L8.01005 0.858582Z"
+                            fill="#000000"></path>
+                          <path d="M12.5 11.5L11.0858 10.0858L13.1716 8L11.0858 5.91422L12.5 4.5L16 8L12.5 11.5Z"
+                            fill="#000000"></path>
+                          <path d="M2.82843 8L4.91421 10.0858L3.5 11.5L0 8L3.5 4.5L4.91421 5.91422L2.82843 8Z"
+                            fill="#000000"></path>
+                        </g>
+                      </svg>
+                    </a>
+                  </div>
 
-              <p class="card-text">發揮創意，解析小遊戲並進行小遊戲開發。<br>
-                遊戲頁面所使用之圖片僅作為學習與課堂作業用途，無任何商業目的。所有圖片版權歸原作者所有，若有侵權請聯繫我們以立即處理。
-              </p>
-              <!-- 遊戲 - 換裝娃娃 下拉選單  -->
-              <div class="accordion accordion-flush " id="accordionFlushExample">
-                <div class="accordion-item ">
-                  <h2 class="accordion-header" id="flush-headingOne">
-                    <button class="accordion-button collapsed text-chinese" type="button" data-bs-toggle="collapse"
-                      data-bs-target="#flush-collapseTwo-one" aria-expanded="false" aria-controls="flush-collapseOne">
-                      發想動機 <span>重溫兒時回憶</span>
-                    </button>
-                  </h2>
-                  <div id="flush-collapseTwo-one" class="accordion-collapse collapse" aria-labelledby="flush-headingOne"
-                    data-bs-parent="#accordionFlushExample">
-                    <div class="accordion-body"><b>重溫小時候的記憶 回味兒時遊戲時光　</b> <br>
+                  <p class="card-text">發揮創意，解析小遊戲並進行小遊戲開發。<br>
+                    遊戲頁面所使用之圖片僅作為學習與課堂作業用途，無任何商業目的。所有圖片版權歸原作者所有，若有侵權請聯繫我們以立即處理。
+                  </p>
+                  <!-- 遊戲 - 換裝娃娃 下拉選單  -->
+                  <div class="accordion accordion-flush " id="accordionFlushExample">
+                    <div class="accordion-item ">
+                      <h2 class="accordion-header" id="flush-headingOne">
+                        <button class="accordion-button collapsed text-chinese" type="button" data-bs-toggle="collapse"
+                          data-bs-target="#flush-collapseTwo-one" aria-expanded="false"
+                          aria-controls="flush-collapseOne">
+                          發想動機 <span>重溫兒時回憶</span>
+                        </button>
+                      </h2>
+                      <div id="flush-collapseTwo-one" class="accordion-collapse collapse"
+                        aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body"><b>重溫小時候的記憶 回味兒時遊戲時光　</b> <br>
 
-                      重新打造一個自己喜歡的風格及人物、場景 <br>
-                      獨自發想遊戲的流程及實作遊戲 <br>
+                          重新打造一個自己喜歡的風格及人物、場景 <br>
+                          獨自發想遊戲的流程及實作遊戲 <br>
 
+                        </div>
+                      </div>
+                    </div>
+                    <div class="accordion-item">
+                      <h2 class="accordion-header" id="flush-headingTwo">
+                        <button class="accordion-button collapsed text-chinese" type="button" data-bs-toggle="collapse"
+                          data-bs-target="#flush-collapseTwo-two" aria-expanded="false"
+                          aria-controls="flush-collapseTwo">
+                          使用者前台 <span>前台功能</span><span>使用技術</span>
+                        </button>
+                      </h2>
+                      <div id="flush-collapseTwo-two" class="accordion-collapse collapse"
+                        aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body">
+                          <h6>利用拖放功實現創意互動體驗</h6>
+                          <ul>
+                            <li>服飾、鞋子的展示窗更換</li>
+                            <li>拖放在人物身上的效果呈現</li>
+                          </ul>
+                          <h6>使用技術</h6>
+                          <ul>
+                            <li>使用 HTML </li>
+                            <li>使用 CSS </li>
+                            <li>使用 JavaScript</li>
+                          </ul>
+                        </div>
+                      </div>
                     </div>
                   </div>
                 </div>
-                <div class="accordion-item">
-                  <h2 class="accordion-header" id="flush-headingTwo">
-                    <button class="accordion-button collapsed text-chinese" type="button" data-bs-toggle="collapse"
-                      data-bs-target="#flush-collapseTwo-two" aria-expanded="false" aria-controls="flush-collapseTwo">
-                      使用者前台 <span>前台功能</span><span>使用技術</span>
-                    </button>
-                  </h2>
-                  <div id="flush-collapseTwo-two" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo"
-                    data-bs-parent="#accordionFlushExample">
-                    <div class="accordion-body">
-                      <h6>利用拖放功實現創意互動體驗</h6>
-                      <ul>
-                        <li>服飾、鞋子的展示窗更換</li>
-                        <li>拖放在人物身上的效果呈現</li>
-                      </ul>
-                      <h6>使用技術</h6>
-                      <ul>
-                        <li>使用 HTML </li>
-                        <li>使用 CSS </li>
-                        <li>使用 JavaScript</li>
-                      </ul>
-                    </div>
-                  </div>
-                </div>
-
               </div>
             </div>
           </div>
@@ -455,80 +474,85 @@
       </div>
 
       <!-- line 機器人 -->
-      <div class="card mb-3 ">
-        <div class="row g-0">
-          <div class="col-xl-7 works-Adopt">
-            <!-- 影片縮圖或按鈕 -->
-            <a class="video-link" data-fancybox="video" href="./video/WORKS-Adopt Us.mp4">
-              <video src="./video/WORKS-Adopt Us.mp4" autoplay></video>
-            </a>
-          </div>
-          <div class="col-xl-5">
-            <div class="card-body text-chinese">
-              <h5 class="card-title">Line - 機器人回覆 / 圖文訊息</h5>
-              <div class="d-flex justify-content-end">
-                <a class="link-btn" href="https://github.com/tsai-yu-xuan/linebot" target="_blank">公開程式碼<svg
-                    width="20px" height="20px" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
-                    <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
-                    <g id="SVGRepo_iconCarrier">
-                      <path d="M8.01005 0.858582L6.01005 14.8586L7.98995 15.1414L9.98995 1.14142L8.01005 0.858582Z"
-                        fill="#000000"></path>
-                      <path d="M12.5 11.5L11.0858 10.0858L13.1716 8L11.0858 5.91422L12.5 4.5L16 8L12.5 11.5Z"
-                        fill="#000000"></path>
-                      <path d="M2.82843 8L4.91421 10.0858L3.5 11.5L0 8L3.5 4.5L4.91421 5.91422L2.82843 8Z"
-                        fill="#000000"></path>
-                    </g>
-                  </svg>
+      <div class="row p-0 m-0 works-card mb-3 ">
+        <div class="col-12">
+          <div class="card" data-aos="zoom-in" data-aos-duration="2000">
+            <div class="row">
+              <div class="col-xl-7 works-Adopt">
+                <!-- 影片縮圖或按鈕 -->
+                <a class="video-link" data-fancybox="video" href="./video/WORKS-Adopt Us.mp4">
+                  <video src="./video/WORKS-Adopt Us.mp4" autoplay></video>
                 </a>
               </div>
-              <p class="card-text">尋找政府開放 JSON 檔案並串 api 使用 axios 來進行 get 取資料 <br>
-                遊戲頁面所使用之圖片僅作為學習與課堂作業用途，無任何商業目的。所有圖片版權歸原作者所有，若有侵權請聯繫我們以立即處理。
-              </p>
-              <!-- line 機器人 下拉選單  -->
-              <div class="accordion accordion-flush " id="accordionFlushExample">
-                <div class="accordion-item ">
-                  <h2 class="accordion-header" id="flush-headingOne">
-                    <button class="accordion-button collapsed text-chinese" type="button" data-bs-toggle="collapse"
-                      data-bs-target="#flush-collapseThree-one" aria-expanded="false" aria-controls="flush-collapseOne">
-                      發想動機 <span>領養寵物</span>
-                    </button>
-                  </h2>
-                  <div id="flush-collapseThree-one" class="accordion-collapse collapse"
-                    aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
-                    <div class="accordion-body"><b>領養代替購買，把愛傳出去</b> <br>
-                      送養資訊利用使用率最高的 Line 來串接成官方帳號，讓讀取率及使用度提升<br>
-                      簡易操作讓撥打電話及地址訊息都能以按鈕的方式來簡易操作<br>
+            </div>
+            <div class="col-xl-5">
+              <div class="card-body text-chinese">
+                <h5 class="card-title">Line - 機器人回覆 / 圖文訊息</h5>
+                <div class="d-flex justify-content-end">
+                  <a class="link-btn" href="https://github.com/tsai-yu-xuan/linebot" target="_blank">公開程式碼<svg
+                      width="20px" height="20px" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                      <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                      <g id="SVGRepo_iconCarrier">
+                        <path d="M8.01005 0.858582L6.01005 14.8586L7.98995 15.1414L9.98995 1.14142L8.01005 0.858582Z"
+                          fill="#000000"></path>
+                        <path d="M12.5 11.5L11.0858 10.0858L13.1716 8L11.0858 5.91422L12.5 4.5L16 8L12.5 11.5Z"
+                          fill="#000000"></path>
+                        <path d="M2.82843 8L4.91421 10.0858L3.5 11.5L0 8L3.5 4.5L4.91421 5.91422L2.82843 8Z"
+                          fill="#000000"></path>
+                      </g>
+                    </svg>
+                  </a>
+                </div>
+                <p class="card-text">尋找政府開放 JSON 檔案並串 api 使用 axios 來進行 get 取資料 <br>
+                  遊戲頁面所使用之圖片僅作為學習與課堂作業用途，無任何商業目的。所有圖片版權歸原作者所有，若有侵權請聯繫我們以立即處理。
+                </p>
+                <!-- line 機器人 下拉選單  -->
+                <div class="accordion accordion-flush " id="accordionFlushExample">
+                  <div class="accordion-item ">
+                    <h2 class="accordion-header" id="flush-headingOne">
+                      <button class="accordion-button collapsed text-chinese" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#flush-collapseThree-one" aria-expanded="false"
+                        aria-controls="flush-collapseOne">
+                        發想動機 <span>領養寵物</span>
+                      </button>
+                    </h2>
+                    <div id="flush-collapseThree-one" class="accordion-collapse collapse"
+                      aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                      <div class="accordion-body"><b>領養代替購買，把愛傳出去</b> <br>
+                        送養資訊利用使用率最高的 Line 來串接成官方帳號，讓讀取率及使用度提升<br>
+                        簡易操作讓撥打電話及地址訊息都能以按鈕的方式來簡易操作<br>
 
+                      </div>
+                    </div>
+                  </div>
+                  <div class="accordion-item">
+                    <h2 class="accordion-header" id="flush-headingTwo">
+                      <button class="accordion-button collapsed text-chinese" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#flush-collapseThree-two" aria-expanded="false"
+                        aria-controls="flush-collapseTwo">
+                        使用者前台 <span>前台功能</span><span>使用技術</span>
+                      </button>
+                    </h2>
+                    <div id="flush-collapseThree-two" class="accordion-collapse collapse"
+                      aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+                      <div class="accordion-body">
+                        <ul>
+                          <li>傳送指定訊息即可觸發圖文</li>
+                          <li>利用圖文選單發送關鍵字訊息，讓版面更簡單</li>
+                        </ul>
+                        <h6>使用技術</h6>
+                        <ul>
+                          <li>串 api </li>
+                          <li>使用 axios 來進行 GET 取得資料</li>
+                          <li>使用 axios 來進行 POST 創建資料</li>
+                          <li>使用 axios 來進行 PUT 更新資料</li>
+                          <li>使用 axios 來進行 DELETE 刪除資料</li>
+                        </ul>
+                      </div>
                     </div>
                   </div>
                 </div>
-                <div class="accordion-item">
-                  <h2 class="accordion-header" id="flush-headingTwo">
-                    <button class="accordion-button collapsed text-chinese" type="button" data-bs-toggle="collapse"
-                      data-bs-target="#flush-collapseThree-two" aria-expanded="false" aria-controls="flush-collapseTwo">
-                      使用者前台 <span>前台功能</span><span>使用技術</span>
-                    </button>
-                  </h2>
-                  <div id="flush-collapseThree-two" class="accordion-collapse collapse"
-                    aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
-                    <div class="accordion-body">
-                      <ul>
-                        <li>傳送指定訊息即可觸發圖文</li>
-                        <li>利用圖文選單發送關鍵字訊息，讓版面更簡單</li>
-                      </ul>
-                      <h6>使用技術</h6>
-                      <ul>
-                        <li>串 api </li>
-                        <li>使用 axios 來進行 GET 取得資料</li>
-                        <li>使用 axios 來進行 POST 創建資料</li>
-                        <li>使用 axios 來進行 PUT 更新資料</li>
-                        <li>使用 axios 來進行 DELETE 刪除資料</li>
-                      </ul>
-                    </div>
-                  </div>
-                </div>
-
               </div>
             </div>
           </div>
@@ -536,62 +560,325 @@
       </div>
 
       <!-- layout 模擬其他網頁 ( 練習網頁刻板技巧 ) -->
-      <div class="card mb-3 ">
-        <div class="row g-0">
-          <div class="col-xl-7  works-ehp">
-            <!-- 影片縮圖或按鈕 -->
-            <a class="video-link" data-fancybox="video" href="./video/WORKS-layout.mp4">
-              <video src="./video/WORKS-layout.mp4" autoplay></video>
-            </a>
-          </div>
-          <div class="col-xl-5">
-            <div class="card-body text-chinese">
-              <h5 class="card-title">layout - 模擬其他網頁 ( 練習刻板技巧 )</h5>
-              <div class="d-flex justify-content-end">
-                <a class="link-btn" href="https://github.com/tsai-yu-xuan/last-template-layout"
-                  target="_blank">公開程式碼<svg width="20px" height="20px" viewBox="0 0 16 16" fill="none"
-                    xmlns="http://www.w3.org/2000/svg">
-                    <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
-                    <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
-                    <g id="SVGRepo_iconCarrier">
-                      <path d="M8.01005 0.858582L6.01005 14.8586L7.98995 15.1414L9.98995 1.14142L8.01005 0.858582Z"
-                        fill="#000000"></path>
-                      <path d="M12.5 11.5L11.0858 10.0858L13.1716 8L11.0858 5.91422L12.5 4.5L16 8L12.5 11.5Z"
-                        fill="#000000"></path>
-                      <path d="M2.82843 8L4.91421 10.0858L3.5 11.5L0 8L3.5 4.5L4.91421 5.91422L2.82843 8Z"
-                        fill="#000000"></path>
-                    </g>
-                  </svg>
+      <div class="row p-0 m-0 works-card mb-3 ">
+        <div class="col-12">
+          <div class="card" data-aos="zoom-in" data-aos-duration="2000">
+            <div class="row">
+              <div class="col-xl-7  works-ehp">
+                <!-- 影片縮圖或按鈕 -->
+                <a class="video-link" data-fancybox="video" href="./video/WORKS-layout.mp4">
+                  <video src="./video/WORKS-layout.mp4" autoplay></video>
                 </a>
               </div>
-              <p class="card-text">模擬優秀網站練習刻板技巧 <br>
-                頁面所使用之圖片僅作為學習與課堂作業用途，無任何商業目的。所有圖片版權歸原作者所有，若有侵權請聯繫我們以立即處理。
-              </p>
-              <!-- line 機器人 下拉選單  -->
-              <div class="accordion accordion-flush " id="accordionFlushExample">
+              <div class="col-xl-5">
+                <div class="card-body text-chinese">
+                  <h5 class="card-title">layout - 模擬其他網頁 ( 練習刻板技巧 )</h5>
+                  <div class="d-flex justify-content-end">
+                    <a class="link-btn" href="https://github.com/tsai-yu-xuan/last-template-layout"
+                      target="_blank">公開程式碼<svg width="20px" height="20px" viewBox="0 0 16 16" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                        <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                        <g id="SVGRepo_iconCarrier">
+                          <path d="M8.01005 0.858582L6.01005 14.8586L7.98995 15.1414L9.98995 1.14142L8.01005 0.858582Z"
+                            fill="#000000"></path>
+                          <path d="M12.5 11.5L11.0858 10.0858L13.1716 8L11.0858 5.91422L12.5 4.5L16 8L12.5 11.5Z"
+                            fill="#000000"></path>
+                          <path d="M2.82843 8L4.91421 10.0858L3.5 11.5L0 8L3.5 4.5L4.91421 5.91422L2.82843 8Z"
+                            fill="#000000"></path>
+                        </g>
+                      </svg>
+                    </a>
+                  </div>
+                  <p class="card-text">模擬優秀網站練習刻板技巧 <br>
+                    頁面所使用之圖片僅作為學習與課堂作業用途，無任何商業目的。所有圖片版權歸原作者所有，若有侵權請聯繫我們以立即處理。
+                  </p>
+                  <!-- line 機器人 下拉選單  -->
+                  <div class="accordion accordion-flush " id="accordionFlushExample">
 
-                <div class="accordion-item">
-                  <h2 class="accordion-header" id="flush-headingTwo">
-                    <button class="accordion-button collapsed text-chinese" type="button" data-bs-toggle="collapse"
-                      data-bs-target="#flush-collapseFour-two" aria-expanded="false" aria-controls="flush-collapseTwo">
-                      模擬心得 <span>前台功能</span><span>使用技術</span>
-                    </button>
-                  </h2>
-                  <div id="flush-collapseFour-two" class="accordion-collapse collapse"
-                    aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
-                    <div class="accordion-body">
-                      <ul>
-                        <li>從模擬中學習切版技巧，是在開始學習的歷程上至關重要的一步</li>
-                        <li>透過實際操作與反覆練習，不僅能快速掌握基本概念，還能培養應對不同版面設計需求的靈活度</li>
-                      </ul>
-                      <h6>使用技術</h6>
-                      <ul>
-                        <li>使用 HTML </li>
-                        <li>使用 CSS </li>
-                        <li>使用 AOS 動畫</li>
-                      </ul>
+                    <div class="accordion-item">
+                      <h2 class="accordion-header" id="flush-headingTwo">
+                        <button class="accordion-button collapsed text-chinese" type="button" data-bs-toggle="collapse"
+                          data-bs-target="#flush-collapseFour-two" aria-expanded="false"
+                          aria-controls="flush-collapseTwo">
+                          模擬心得 <span>前台功能</span><span>使用技術</span>
+                        </button>
+                      </h2>
+                      <div id="flush-collapseFour-two" class="accordion-collapse collapse"
+                        aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body">
+                          <ul>
+                            <li>從模擬中學習切版技巧，是在開始學習的歷程上至關重要的一步</li>
+                            <li>透過實際操作與反覆練習，不僅能快速掌握基本概念，還能培養應對不同版面設計需求的靈活度</li>
+                          </ul>
+                          <h6>使用技術</h6>
+                          <ul>
+                            <li>使用 HTML </li>
+                            <li>使用 CSS </li>
+                            <li>使用 AOS 動畫</li>
+                          </ul>
+                        </div>
+                      </div>
                     </div>
                   </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <!--  技能 Skills-->
+      <div class="skill-body row text-chinese" id="SKILL">
+        <div class="d-flex justify-content-center">
+          <h1 class="card-header  mb-5" data-aos="flip-up" data-aos-duration="2000"
+            data-aos-anchor-placement="center-center">技能 SKILL</h1>
+          <!-- <h1 class="card-header skill-text">SKILL</h1> -->
+        </div>
+        <div class="row p-0 m-0">
+          <div class="col-xl-4">
+            <div class="card" data-aos="zoom-in" data-aos-duration="2000">
+              <div class="skill-title p-3 text-center">
+                <svg xmlns="http://www.w3.org/2000/svg" width="80" height="80" fill="currentColor"
+                  class="bi bi-filetype-html" viewBox="0 0 16 16">
+                  <path fill-rule="evenodd"
+                    d="M14 4.5V11h-1V4.5h-2A1.5 1.5 0 0 1 9.5 3V1H4a1 1 0 0 0-1 1v9H2V2a2 2 0 0 1 2-2h5.5zm-9.736 7.35v3.999h-.791v-1.714H1.79v1.714H1V11.85h.791v1.626h1.682V11.85h.79Zm2.251.662v3.337h-.794v-3.337H4.588v-.662h3.064v.662zm2.176 3.337v-2.66h.038l.952 2.159h.516l.946-2.16h.038v2.661h.715V11.85h-.8l-1.14 2.596H9.93L8.79 11.85h-.805v3.999zm4.71-.674h1.696v.674H12.61V11.85h.79v3.325Z" />
+                </svg>
+                <h4>前端開發</h4>
+                <hr>
+                <div class="card-body ">
+                  <blockquote class="blockquote mb-0">
+                    <ul>
+                      <li>
+                        <svg width="25px" hight="25px" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48">
+                          <path fill="#E65100" d="M41,5H7l3,34l14,4l14-4L41,5L41,5z"></path>
+                          <path fill="#FF6D00" d="M24 8L24 39.9 35.2 36.7 37.7 8z"></path>
+                          <path fill="#FFF"
+                            d="M24,25v-4h8.6l-0.7,11.5L24,35.1v-4.2l4.1-1.4l0.3-4.5H24z M32.9,17l0.3-4H24v4H32.9z">
+                          </path>
+                          <path fill="#EEE"
+                            d="M24,30.9v4.2l-7.9-2.6L15.7,27h4l0.2,2.5L24,30.9z M19.1,17H24v-4h-9.1l0.7,12H24v-4h-4.6L19.1,17z">
+                          </path>
+                        </svg>
+                        HTML
+                      </li>
+                      <li>
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" width="25px" hight="25px">
+                          <path fill="#0277BD" d="M41,5H7l3,34l14,4l14-4L41,5L41,5z"></path>
+                          <path fill="#039BE5" d="M24 8L24 39.9 35.2 36.7 37.7 8z"></path>
+                          <path fill="#FFF"
+                            d="M33.1 13L24 13 24 17 28.9 17 28.6 21 24 21 24 25 28.4 25 28.1 29.5 24 30.9 24 35.1 31.9 32.5 32.6 21 32.6 21z">
+                          </path>
+                          <path fill="#EEE"
+                            d="M24,13v4h-8.9l-0.3-4H24z M19.4,21l0.2,4H24v-4H19.4z M19.8,27h-4l0.3,5.5l7.9,2.6v-4.2l-4.1-1.4L19.8,27z">
+                          </path>
+                        </svg>
+                        CSS
+                      </li>
+                      <li>
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" width="25px" hight="25px">
+                          <path fill="#f06292"
+                            d="M39.867,25.956c-1.538,0.008-2.87,0.377-3.986,0.928c-0.408-0.815-0.822-1.532-0.891-2.065 c-0.081-0.622-0.175-0.994-0.077-1.735c0.098-0.741,0.527-1.791,0.521-1.87c-0.006-0.079-0.096-0.456-0.983-0.463 c-0.887-0.006-1.646,0.171-1.735,0.405c-0.089,0.234-0.26,0.761-0.366,1.311c-0.155,0.804-1.771,3.673-2.688,5.173 c-0.3-0.586-0.555-1.102-0.608-1.51c-0.081-0.622-0.175-0.994-0.077-1.735c0.098-0.741,0.527-1.791,0.521-1.87 c-0.006-0.079-0.096-0.456-0.983-0.463c-0.887-0.006-1.646,0.171-1.735,0.405c-0.089,0.234-0.185,0.781-0.366,1.311 c-0.182,0.529-2.329,5.314-2.892,6.555c-0.287,0.632-0.536,1.14-0.712,1.486c-0.001-0.001-0.001-0.002-0.001-0.002 s-0.011,0.023-0.029,0.062c-0.151,0.295-0.24,0.458-0.24,0.458s0.001,0.002,0.003,0.006c-0.12,0.217-0.248,0.418-0.311,0.418 c-0.044,0-0.133-0.577,0.019-1.369c0.32-1.66,1.087-4.248,1.08-4.338c-0.004-0.046,0.143-0.497-0.501-0.733 c-0.626-0.229-0.849,0.153-0.906,0.154c-0.055,0.001-0.096,0.135-0.096,0.135s0.697-2.911-1.33-2.911 c-1.268,0-3.024,1.387-3.889,2.644c-0.546,0.298-1.715,0.936-2.954,1.617c-0.476,0.262-0.962,0.529-1.423,0.783 c-0.031-0.035-0.063-0.069-0.095-0.104c-2.459-2.623-7.003-4.478-6.811-8.005c0.07-1.282,0.516-4.658,8.733-8.752 c6.731-3.354,12.12-2.431,13.051-0.386c1.33,2.923-2.88,8.354-9.87,9.138c-2.663,0.299-4.066-0.734-4.415-1.118 c-0.367-0.405-0.422-0.423-0.559-0.347c-0.223,0.124-0.082,0.481,0,0.694c0.209,0.543,1.065,1.506,2.525,1.986 c1.285,0.422,4.412,0.653,8.193-0.81c4.236-1.638,7.543-6.196,6.571-10.005c-0.988-3.874-7.412-5.148-13.492-2.988 C12.44,9.332,8.523,11.35,5.706,13.984c-3.349,3.132-3.883,5.859-3.663,6.998c0.782,4.048,6.361,6.684,8.595,8.637 c-0.11,0.061-0.214,0.118-0.308,0.17c-1.12,0.554-5.373,2.78-6.437,5.131c-1.207,2.667,0.192,4.581,1.118,4.839 c2.869,0.798,5.813-0.638,7.396-2.998c1.582-2.359,1.389-5.432,0.663-6.834c-0.009-0.017-0.019-0.034-0.028-0.052 c0.289-0.171,0.584-0.345,0.876-0.517c0.57-0.335,1.13-0.647,1.615-0.911c-0.272,0.744-0.471,1.637-0.574,2.926 c-0.122,1.514,0.499,3.471,1.311,4.241c0.358,0.339,0.788,0.347,1.06,0.347c0.945,0,1.376-0.786,1.851-1.716 c0.582-1.14,1.099-2.468,1.099-2.468s-0.648,3.586,1.118,3.586c0.644,0,1.291-0.835,1.58-1.26c0.001,0.005,0.001,0.007,0.001,0.007 s0.017-0.028,0.05-0.083c0.067-0.102,0.105-0.167,0.105-0.167s0.001-0.007,0.003-0.019c0.259-0.449,0.833-1.473,1.693-3.162 c1.112-2.182,2.178-4.916,2.178-4.916s0.099,0.668,0.424,1.774c0.191,0.65,0.597,1.369,0.918,2.059 c-0.258,0.358-0.416,0.563-0.416,0.563s0.001,0.004,0.004,0.011c-0.206,0.274-0.437,0.569-0.679,0.857 c-0.878,1.045-1.923,2.239-2.063,2.583c-0.165,0.406-0.126,0.704,0.193,0.945c0.233,0.175,0.647,0.203,1.08,0.174 c0.789-0.053,1.343-0.249,1.617-0.368c0.427-0.151,0.924-0.388,1.39-0.731c0.861-0.633,1.38-1.538,1.33-2.738 c-0.028-0.661-0.238-1.316-0.505-1.934c0.078-0.112,0.156-0.226,0.235-0.34c1.357-1.984,2.41-4.164,2.41-4.164 s0.099,0.668,0.424,1.774c0.164,0.559,0.489,1.17,0.781,1.768c-1.276,1.037-2.067,2.242-2.342,3.032 c-0.508,1.462-0.11,2.124,0.636,2.275c0.338,0.068,0.816-0.087,1.175-0.239c0.447-0.148,0.984-0.395,1.486-0.764 c0.861-0.633,1.689-1.519,1.639-2.718c-0.023-0.546-0.171-1.088-0.372-1.608c1.082-0.451,2.482-0.701,4.266-0.493 c3.827,0.447,4.577,2.836,4.434,3.836c-0.144,1-0.946,1.55-1.215,1.716c-0.268,0.166-0.35,0.224-0.328,0.347 c0.033,0.179,0.157,0.173,0.386,0.134c0.315-0.053,2.009-0.813,2.082-2.659C46.089,28.509,43.844,25.935,39.867,25.956z M10.37,35.9 c-1.268,1.383-3.038,1.905-3.798,1.465c-0.82-0.475-0.495-2.511,1.06-3.979c0.948-0.894,2.172-1.718,2.984-2.225 c0.185-0.111,0.456-0.274,0.786-0.472c0.055-0.031,0.086-0.048,0.086-0.048l-0.001-0.002c0.064-0.038,0.129-0.077,0.196-0.118 C12.25,32.61,11.701,34.449,10.37,35.9z M19.605,29.623c-0.441,1.076-1.365,3.83-1.928,3.682c-0.483-0.127-0.777-2.22-0.096-4.28 c0.342-1.037,1.074-2.276,1.504-2.757c0.692-0.774,1.454-1.027,1.639-0.713C20.959,25.955,19.882,28.948,19.605,29.623z M27.234,33.263c-0.187,0.098-0.359,0.159-0.438,0.112c-0.059-0.035,0.077-0.164,0.077-0.164s0.954-1.027,1.33-1.494 c0.219-0.272,0.472-0.595,0.748-0.955c0.002,0.036,0.003,0.072,0.003,0.107C28.952,32.099,27.764,32.929,27.234,33.263z M33.111,31.923c-0.14-0.099-0.116-0.42,0.343-1.421c0.18-0.393,0.592-1.054,1.306-1.686c0.083,0.26,0.133,0.509,0.132,0.741 C34.883,31.105,33.779,31.683,33.111,31.923z">
+                          </path>
+                        </svg>
+                        Scss / Sass
+                      </li>
+                      <li>
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" width="25px" height="25px">
+                          <path fill="#673ab7"
+                            d="M42,37c0,2.762-2.238,5-5,5H11c-2.761,0-5-2.238-5-5V11c0-2.762,2.239-5,5-5h26c2.762,0,5,2.238,5,5 V37z">
+                          </path>
+                          <path fill="#fff"
+                            d="M33.03,25.6c-0.65-0.9-1.59-1.52-2.8-1.85c0,0,1.02-0.37,1.94-1.75c0.55-0.88,0.83-1.94,0.83-3.18 c0-2.15-0.78-3.8-2.34-4.93C29.1,12.76,27.34,12,24.35,12H15v24h10.43c2.83-0.02,4.96-0.63,6.41-1.8c1.44-1.19,2.16-2.95,2.16-5.3 C34,27.6,33.68,26.5,33.03,25.6z M21,16c0,0,4.17,0,4.25,0c1.52,0,2.75,1.23,2.75,2.75c0,1.52-1.23,2.75-2.75,2.75 c-0.08,0-4.25,0-4.25,0V16z M26,32h-5v-6h5c1.66,0,3,1.34,3,3C29,30.66,27.66,32,26,32z">
+                          </path>
+                        </svg>
+                        Bootstrap
+                      </li>
+                      <li>
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" width="25px" height="25px">
+                          <path fill="#ffd600" d="M6,42V6h36v36H6z"></path>
+                          <path fill="#000001"
+                            d="M29.538 32.947c.692 1.124 1.444 2.201 3.037 2.201 1.338 0 2.04-.665 2.04-1.585 0-1.101-.726-1.492-2.198-2.133l-.807-.344c-2.329-.988-3.878-2.226-3.878-4.841 0-2.41 1.845-4.244 4.728-4.244 2.053 0 3.528.711 4.592 2.573l-2.514 1.607c-.553-.988-1.151-1.377-2.078-1.377-.946 0-1.545.597-1.545 1.377 0 .964.6 1.354 1.985 1.951l.807.344C36.452 29.645 38 30.839 38 33.523 38 36.415 35.716 38 32.65 38c-2.999 0-4.702-1.505-5.65-3.368L29.538 32.947zM17.952 33.029c.506.906 1.275 1.603 2.381 1.603 1.058 0 1.667-.418 1.667-2.043V22h3.333v11.101c0 3.367-1.953 4.899-4.805 4.899-2.577 0-4.437-1.746-5.195-3.368L17.952 33.029z">
+                          </path>
+                        </svg>
+                        JavaScript
+                      </li>
+                      <li>
+                        <svg xmlns="http://www.w3.org/2000/svg" height="25" width="25" viewBox="0 0 32 32"
+                          fill="#0868ac">
+                          <path
+                            d="M2.144 7.705c-2.83 4.07-2.48 9.364-.316 13.7.05.104.105.206.158.308l.1.195c.02.038.042.075.063.112.037.07.075.134.113.202l.207.354.118.194.24.375.102.158c.113.168.228.336.347.5l.068.092a16.39 16.39 0 0 0 .316.42l.12.152.292.36.112.134c.133.157.27.313.407.465.014.015.02.02.024.026a20.44 20.44 0 0 0 .414.436l.133.134.33.324.135.13a16.98 16.98 0 0 0 .453.412l.496.42.17.136.343.268.183.14.385.276.18.127c.123.085.248.166.374.247l.162.108a20.81 20.81 0 0 0 .585.358l.162.1.44.246c.08.043.162.084.243.125l.314.163.073.035.13.062.498.23.105.047a17.83 17.83 0 0 0 .581.241l.14.056.548.203.07.024a21.72 21.72 0 0 0 .61.2l.148.044c.2.063.416.14.63.178 13.694 2.497 17.67-8.23 17.67-8.23-3.34 4.352-9.27 5.5-14.9 4.222-.213-.048-.42-.114-.627-.176l-.156-.047a18.62 18.62 0 0 1-.604-.197l-.083-.03a20.87 20.87 0 0 1-.532-.197l-.15-.06a15.16 15.16 0 0 1-.575-.24l-.115-.05-.485-.226-.14-.067c-.126-.06-.25-.127-.375-.2l-.25-.13c-.152-.08-.3-.166-.45-.252l-.152-.085a21.76 21.76 0 0 1-.585-.358c-.053-.034-.105-.07-.158-.105l-.416-.277c-.046-.03-.1-.064-.134-.094l-.394-.285-.175-.132-.355-.278-.158-.127-.442-.373a.73.73 0 0 0-.05-.04l-.465-.423-.13-.126-.332-.33-.13-.13c-.14-.143-.276-.287-.4-.434-.007-.007-.014-.014-.02-.022a16.98 16.98 0 0 1-.416-.474l-.1-.13-.3-.37-.1-.137-.346-.46C2.982 15.6 1.86 9.722 4.354 4.902m6.58-.625c-2.048 2.947-1.937 6.9-.34 10.008a13.06 13.06 0 0 0 .906 1.512c.307.44.647.963 1.054 1.316.148.163.302.32.46.477l.12.12a13.41 13.41 0 0 0 .469.436c.007.005.012.012.02.017.182.16.366.3.553.458l.124.097a13.46 13.46 0 0 0 .574.419l.017.012c.086.06.174.115.262.173.042.027.082.056.124.082a11.64 11.64 0 0 0 .425.26l.06.035.376.2c.044.025.1.046.134.07l.263.136c.013.007.027.012.04.018a11.39 11.39 0 0 0 .548.255l.12.05a14.16 14.16 0 0 0 .45.182l.192.07a14.26 14.26 0 0 0 .413.143l.187.06c.197.06.4.14.597.173 10.573 1.752 13.014-6.4 13.014-6.4-2.2 3.17-6.46 4.68-11.008 3.5a13.06 13.06 0 0 1-.599-.173c-.06-.018-.12-.038-.18-.058l-.42-.144-.2-.07a15.08 15.08 0 0 1-.45-.182l-.122-.05a12.58 12.58 0 0 1-.552-.256l-.277-.14-.16-.082a13.16 13.16 0 0 1-.35-.197l-.084-.047a12.34 12.34 0 0 1-.424-.26c-.043-.027-.085-.057-.128-.085l-.275-.182a13.24 13.24 0 0 1-.57-.418l-.13-.1c-2-1.572-3.568-3.72-4.318-6.154-.786-2.525-.617-5.36.745-7.66m5.732-.183C17.12 3.5 17 5.698 17.838 7.66c.883 2.083 2.693 3.716 4.806 4.5l.262.1.116.036.377.1c5.838 1.128 7.42-2.996 7.843-3.603-1.387 1.997-3.718 2.476-6.578 1.782-.226-.055-.474-.137-.692-.214a8.46 8.46 0 0 1-.822-.341 8.5 8.5 0 0 1-1.441-.879C19.15 7.2 17.56 3.486 19.23.47">
+                          </path>
+                        </svg>
+                        jQuery
+                      </li>
+                      <li>
+                        <svg width="25px" hight="25px" xmlns="http://www.w3.org/2000/svg"
+                          enable-background="new 0 0 2500 2165.1" viewBox="0 0 2500 2165.1">
+                          <path d="m1538.7 0-288.7 500-288.7-500h-961.3l1250 2165.1 1250-2165.1z" fill="#4dba87"></path>
+                          <path d="m1538.7 0-288.7 500-288.7-500h-461.3l750 1299 750-1299z" fill="#435466"></path>
+                        </svg>
+                        Vue.js
+                      </li>
+                      <li>
+                        <svg width="25px" hight="25px" xmlns="http://www.w3.org/2000/svg"
+                          enable-background="new 0 0 2187.5 2500" viewBox="0 0 2187.5 2500">
+                          <path d="m1093.8 0h-511l511 1208" fill="#1697f6"></path>
+                          <path d="m1093.8 1562.5v937.5l-1093.8-2135.5h573zm0-1562.5h511l-511 1208" fill="#7bc6ff">
+                          </path>
+                          <path d="m1614.5 364.5h573l-1093.7 2135.5v-937.5z" fill="#aeddff"></path>
+                        </svg>
+                        Vuetify
+                      </li>
+                    </ul>
+                  </blockquote>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-4">
+            <div class="card" data-aos="zoom-in" data-aos-duration="2300">
+              <div class="skill-title p-3 text-center">
+                <svg xmlns="http://www.w3.org/2000/svg" width="80" height="80" fill="currentColor"
+                  class="bi bi-file-earmark-code" viewBox="0 0 16 16">
+                  <path
+                    d="M14 4.5V14a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V2a2 2 0 0 1 2-2h5.5zm-3 0A1.5 1.5 0 0 1 9.5 3V1H4a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1V4.5z" />
+                  <path
+                    d="M8.646 6.646a.5.5 0 0 1 .708 0l2 2a.5.5 0 0 1 0 .708l-2 2a.5.5 0 0 1-.708-.708L10.293 9 8.646 7.354a.5.5 0 0 1 0-.708m-1.292 0a.5.5 0 0 0-.708 0l-2 2a.5.5 0 0 0 0 .708l2 2a.5.5 0 0 0 .708-.708L5.707 9l1.647-1.646a.5.5 0 0 0 0-.708" />
+                </svg>
+                <h4>後端技術</h4>
+                <hr>
+                <div class="card-body">
+                  <blockquote class="blockquote mb-0">
+                    <ul>
+                      <li>
+                        <svg width="25px" hight="25px" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48">
+                          <path fill="#388e3c"
+                            d="M17.204 19.122l-4.907 2.715C12.113 21.938 12 22.126 12 22.329v5.433c0 .203.113.39.297.492l4.908 2.717c.183.101.41.101.593 0l4.907-2.717C22.887 28.152 23 27.965 23 27.762v-5.433c0-.203-.113-.39-.297-.492l-4.906-2.715c-.092-.051-.195-.076-.297-.076-.103 0-.205.025-.297.076M42.451 24.013l-.818.452c-.031.017-.049.048-.049.082v.906c0 .034.019.065.049.082l.818.453c.031.017.068.017.099 0l.818-.453c.03-.017.049-.048.049-.082v-.906c0-.034-.019-.065-.05-.082l-.818-.452C42.534 24.004 42.517 24 42.5 24S42.466 24.004 42.451 24.013">
+                          </path>
+                          <path fill="#37474f"
+                            d="M35.751,13.364l-2.389-1.333c-0.075-0.042-0.167-0.041-0.241,0.003 c-0.074,0.044-0.12,0.123-0.12,0.209L33,20.295l-2.203-1.219C30.705,19.025,30.602,19,30.5,19c-0.102,0-0.205,0.025-0.297,0.076 h0.001l-4.907,2.715C25.113,21.892,25,22.08,25,22.282v5.433c0,0.203,0.113,0.39,0.297,0.492l4.908,2.717 c0.183,0.101,0.41,0.101,0.593,0l4.907-2.717C35.887,28.106,36,27.918,36,27.715V13.788C36,13.612,35.904,13.45,35.751,13.364z M32.866,26.458l-2.23,1.235c-0.083,0.046-0.186,0.046-0.269,0l-2.231-1.235C28.051,26.412,28,26.326,28,26.234v-2.47 c0-0.092,0.051-0.177,0.135-0.224l2.231-1.234h-0.001c0.042-0.023,0.088-0.034,0.135-0.034c0.047,0,0.093,0.012,0.135,0.034 l2.23,1.234C32.949,23.587,33,23.673,33,23.765v2.47C33,26.326,32.949,26.412,32.866,26.458z">
+                          </path>
+                          <path fill="#2e7d32"
+                            d="M17.204,19.122L12,27.762c0,0.203,0.113,0.39,0.297,0.492l4.908,2.717 c0.183,0.101,0.41,0.101,0.593,0L23,22.329c0-0.203-0.113-0.39-0.297-0.492l-4.906-2.715c-0.092-0.051-0.195-0.076-0.297-0.076 c-0.103,0-0.205,0.025-0.297,0.076">
+                          </path>
+                          <path fill="#4caf50"
+                            d="M17.204,19.122l-4.907,2.715C12.113,21.938,12,22.126,12,22.329l5.204,8.642 c0.183,0.101,0.41,0.101,0.593,0l4.907-2.717C22.887,28.152,23,27.965,23,27.762l-5.203-8.64c-0.092-0.051-0.195-0.076-0.297-0.076 c-0.103,0-0.205,0.025-0.297,0.076">
+                          </path>
+                          <path fill="#37474f"
+                            d="M47.703 21.791l-4.906-2.715C42.705 19.025 42.602 19 42.5 19c-.102 0-.205.025-.297.076h.001l-4.907 2.715C37.114 21.892 37 22.084 37 22.294v5.411c0 .209.114.402.297.503l4.908 2.717c.184.102.409.102.593 0l2.263-1.253c.207-.115.206-.412-.002-.526l-4.924-2.687C40.052 26.412 40 26.325 40 26.231v-2.466c0-.092.05-.177.13-.221l2.235-1.236h-.001c.042-.023.088-.034.135-.034.047 0 .093.012.135.034l2.235 1.237c.08.044.13.129.13.221v2.012c0 .086.046.166.121.209.075.042.167.042.242-.001l2.398-1.393c.148-.086.24-.245.24-.417v-1.88C48 22.085 47.886 21.892 47.703 21.791zM10.703 21.791l-4.906-2.715C5.705 19.025 5.602 19 5.5 19c-.102 0-.205.025-.297.076h.001l-4.907 2.715C.114 21.892 0 22.084 0 22.294v7.465c0 .086.046.166.121.209.075.042.167.042.242-.001l2.398-1.393C2.909 28.488 3 28.329 3 28.157v-4.393c0-.092.05-.177.13-.221l2.235-1.236H5.365c.042-.023.088-.034.135-.034.047 0 .093.012.135.034l2.235 1.237C7.95 23.588 8 23.673 8 23.765v4.393c0 .172.091.331.24.417l2.398 1.393c.075.043.167.043.242.001C10.954 29.925 11 29.845 11 29.759v-7.464C11 22.085 10.886 21.892 10.703 21.791z">
+                          </path>
+                        </svg>
+                        Node.js
+                      </li>
+                      <li>
+                        <svg width="25px" hight="25px" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48">
+                          <path fill="#5d4037"
+                            d="M42,17.3C42,37.8,24,44,24,44S6,37.8,6,17.3c0-2.5,0.2-4.6,0.4-6.3c0.3-2.5,2-4.5,4.4-5.1 C13.9,5,18.8,4,24,4s10.1,1,13.3,1.9c2.4,0.6,4.1,2.7,4.4,5.1C41.8,12.7,42,14.9,42,17.3z">
+                          </path>
+                          <path fill="#4caf50"
+                            d="M24,7c4.9,0,9.5,1,12.5,1.8c1.2,0.3,2,1.3,2.2,2.6c0.2,1.9,0.3,3.9,0.3,5.9c0,15.6-11.5,21.9-15,23.4 c-3.5-1.6-15-7.9-15-23.4c0-2,0.1-4,0.3-5.9c0.1-1.3,1-2.3,2.2-2.6C14.5,8,19.1,7,24,7 M24,4c-5.2,0-10.1,1-13.3,1.9 C8.4,6.5,6.6,8.6,6.4,11C6.2,12.7,6,14.9,6,17.3C6,37.8,24,44,24,44s18-6.2,18-26.7c0-2.5-0.2-4.6-0.4-6.3c-0.3-2.5-2-4.5-4.4-5.1 C34.1,5,29.2,4,24,4L24,4z">
+                          </path>
+                          <path fill="#dcedc8" d="M23 28H25V36H23z"></path>
+                          <path fill="#4caf50"
+                            d="M24,10c0,0-6,5-6,13c0,5.2,3.3,8.5,5,10l1-3l1,3c1.7-1.5,5-4.8,5-10C30,15,24,10,24,10z">
+                          </path>
+                          <path fill="#81c784" d="M24,10c0,0-6,5-6,13c0,5.2,3.3,8.5,5,10l1-3V10z"></path>
+                        </svg>
+                        MongoDB
+                      </li>
+                      <li>
+                        <svg width="25px" hight="25px" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48">
+                          <path fill="#F4511E"
+                            d="M42.2,22.1L25.9,5.8C25.4,5.3,24.7,5,24,5c0,0,0,0,0,0c-0.7,0-1.4,0.3-1.9,0.8l-3.5,3.5l4.1,4.1c0.4-0.2,0.8-0.3,1.3-0.3c1.7,0,3,1.3,3,3c0,0.5-0.1,0.9-0.3,1.3l4,4c0.4-0.2,0.8-0.3,1.3-0.3c1.7,0,3,1.3,3,3s-1.3,3-3,3c-1.7,0-3-1.3-3-3c0-0.5,0.1-0.9,0.3-1.3l-4-4c-0.1,0-0.2,0.1-0.3,0.1v10.4c1.2,0.4,2,1.5,2,2.8c0,1.7-1.3,3-3,3s-3-1.3-3-3c0-1.3,0.8-2.4,2-2.8V18.8c-1.2-0.4-2-1.5-2-2.8c0-0.5,0.1-0.9,0.3-1.3l-4.1-4.1L5.8,22.1C5.3,22.6,5,23.3,5,24c0,0.7,0.3,1.4,0.8,1.9l16.3,16.3c0,0,0,0,0,0c0.5,0.5,1.2,0.8,1.9,0.8s1.4-0.3,1.9-0.8l16.3-16.3c0.5-0.5,0.8-1.2,0.8-1.9C43,23.3,42.7,22.6,42.2,22.1z">
+                          </path>
+                        </svg>
+                        Git 版本控管
+                      </li>
+                    </ul>
+
+                  </blockquote>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-4">
+            <div class="card" data-aos="zoom-in" data-aos-duration="2000">
+              <div class="skill-title p-3 text-center">
+                <svg xmlns="http://www.w3.org/2000/svg" width="80" height="80" fill="currentColor" class="bi bi-brush"
+                  viewBox="0 0 16 16">
+                  <path
+                    d="M15.825.12a.5.5 0 0 1 .132.584c-1.53 3.43-4.743 8.17-7.095 10.64a6.1 6.1 0 0 1-2.373 1.534c-.018.227-.06.538-.16.868-.201.659-.667 1.479-1.708 1.74a8.1 8.1 0 0 1-3.078.132 4 4 0 0 1-.562-.135 1.4 1.4 0 0 1-.466-.247.7.7 0 0 1-.204-.288.62.62 0 0 1 .004-.443c.095-.245.316-.38.461-.452.394-.197.625-.453.867-.826.095-.144.184-.297.287-.472l.117-.198c.151-.255.326-.54.546-.848.528-.739 1.201-.925 1.746-.896q.19.012.348.048c.062-.172.142-.38.238-.608.261-.619.658-1.419 1.187-2.069 2.176-2.67 6.18-6.206 9.117-8.104a.5.5 0 0 1 .596.04M4.705 11.912a1.2 1.2 0 0 0-.419-.1c-.246-.013-.573.05-.879.479-.197.275-.355.532-.5.777l-.105.177c-.106.181-.213.362-.32.528a3.4 3.4 0 0 1-.76.861c.69.112 1.736.111 2.657-.12.559-.139.843-.569.993-1.06a3 3 0 0 0 .126-.75zm1.44.026c.12-.04.277-.1.458-.183a5.1 5.1 0 0 0 1.535-1.1c1.9-1.996 4.412-5.57 6.052-8.631-2.59 1.927-5.566 4.66-7.302 6.792-.442.543-.795 1.243-1.042 1.826-.121.288-.214.54-.275.72v.001l.575.575zm-4.973 3.04.007-.005zm3.582-3.043.002.001h-.002z" />
+                </svg>
+
+
+                <h4>視覺設計</h4>
+                <hr>
+                <div class="card-body">
+                  <blockquote class="blockquote mb-0">
+                    <ul>
+                      <li>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="25px" hight="25px" viewBox="0 0 32 32">
+                          <title>file_type_photoshop</title>
+                          <path d="M3.167,3.517H28.833V28.483H3.167Z" style="fill:#0c0824"></path>
+                          <path
+                            d="M3.167,3.517H28.833V28.483H3.167ZM2,29.65H30V2.35H2Zm18.877-16.1c-.922,0-1.237.467-1.237.852,0,.42.21.712,1.447,1.353,1.832.887,2.4,1.738,2.4,2.987,0,1.867-1.423,2.87-3.348,2.87a5.076,5.076,0,0,1-2.392-.5c-.082-.035-.093-.093-.093-.187V19.208c0-.117.058-.152.14-.093a4.33,4.33,0,0,0,2.345.688c.922,0,1.307-.385,1.307-.91,0-.42-.268-.793-1.447-1.4-1.657-.793-2.345-1.6-2.345-2.94,0-1.505,1.178-2.753,3.22-2.753a5.365,5.365,0,0,1,2.088.327.258.258,0,0,1,.117.233v1.6c0,.093-.058.152-.175.117a3.941,3.941,0,0,0-2.03-.525ZM10.843,14.938c.268.023.478.023.945.023,1.365,0,2.648-.478,2.648-2.333,0-1.482-.922-2.228-2.473-2.228-.467,0-.91.023-1.12.035Zm-2.077-6.2c0-.082.163-.14.257-.14.747-.035,1.855-.058,3.01-.058,3.232,0,4.492,1.773,4.492,4.037,0,2.963-2.147,4.235-4.783,4.235-.443,0-.595-.023-.91-.023v4.48c0,.093-.035.14-.14.14H8.907c-.093,0-.14-.035-.14-.14V8.743Z"
+                            style="fill:#31c5f0"></path>
+                        </svg>
+
+                        Photoshop
+                      </li>
+                      <li>
+                        <svg width="25px" hight="25px" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"
+                          fill="none">
+                          <path
+                            d="M2 12.1333C2 8.58633 2 6.81283 2.69029 5.45806C3.29749 4.26637 4.26637 3.29749 5.45806 2.69029C6.81283 2 8.58633 2 12.1333 2H19.8667C23.4137 2 25.1872 2 26.5419 2.69029C27.7336 3.29749 28.7025 4.26637 29.3097 5.45806C30 6.81283 30 8.58633 30 12.1333V19.8667C30 23.4137 30 25.1872 29.3097 26.5419C28.7025 27.7336 27.7336 28.7025 26.5419 29.3097C25.1872 30 23.4137 30 19.8667 30H12.1333C8.58633 30 6.81283 30 5.45806 29.3097C4.26637 28.7025 3.29749 27.7336 2.69029 26.5419C2 25.1872 2 23.4137 2 19.8667V12.1333Z"
+                            fill="#330000"></path>
+                          <path
+                            d="M15.5686 19.5963H11.2297L10.3469 22.409C10.3224 22.5135 10.2262 22.5875 10.1215 22.5823H7.92384C7.79851 22.5823 7.75469 22.5117 7.79236 22.3704L11.549 11.2738C11.5866 11.1582 11.6242 11.0266 11.6617 10.8789C11.7109 10.6218 11.736 10.3606 11.7369 10.0987C11.7261 10.0213 11.7941 9.95294 11.8683 9.96378H14.8549C14.9424 9.96378 14.9924 9.9959 15.0051 10.0601L19.269 22.3897C19.3065 22.5182 19.269 22.5824 19.1563 22.5823H16.7144C16.6288 22.5921 16.547 22.5334 16.5266 22.4475L15.5686 19.5963ZM11.9059 17.1689H14.8737C14.3861 15.5027 13.8358 13.8584 13.3898 12.1793C12.9086 13.8613 12.3836 15.5365 11.9059 17.1689Z"
+                            fill="#FF9A00"></path>
+                          <path
+                            d="M21.8045 12.0058C21.6129 12.0137 21.4219 11.98 21.2438 11.907C21.0658 11.834 20.9048 11.7232 20.7714 11.582C20.6384 11.4346 20.535 11.2618 20.4673 11.0733C20.3996 10.8849 20.3689 10.6846 20.3769 10.4839C20.3701 10.2852 20.4042 10.0873 20.477 9.90305C20.5499 9.71881 20.6598 9.5524 20.7996 9.41468C20.938 9.27839 21.1014 9.17161 21.2804 9.10052C21.4593 9.02942 21.6502 8.99543 21.842 9.00049C22.2929 9.00049 22.6466 9.13856 22.9033 9.41468C23.0329 9.55818 23.1336 9.72648 23.1997 9.90995C23.2657 10.0934 23.2959 10.2885 23.2883 10.4839C23.2962 10.6853 23.2645 10.8864 23.1951 11.075C23.1258 11.2636 23.0201 11.436 22.8845 11.582C22.7428 11.7253 22.5736 11.8369 22.3878 11.9099C22.2019 11.9828 22.0033 12.0155 21.8045 12.0058ZM20.5084 22.3896V13.181C20.5084 13.0654 20.5583 13.0076 20.6587 13.0076H22.9691C23.0691 13.0076 23.1192 13.0654 23.1193 13.181V22.3896C23.1193 22.5182 23.0692 22.5824 22.9691 22.5823H20.6775C20.5648 22.5823 20.5084 22.5181 20.5084 22.3896Z"
+                            fill="#FF9A00"></path>
+                        </svg>
+                        Illustrator
+                      </li>
+                      <li>
+                        <svg width="25px" hight="25px" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                          <g fill="none" fill-rule="evenodd" transform="translate(4)">
+                            <circle cx="12" cy="12" r="4" fill="#19BCFE"></circle>
+                            <path fill="#09CF83"
+                              d="M4,24 C6.209139,24 8,22.209139 8,20 C8,19.3969461 8,18.0636128 8,16 C6.20303877,16 4.86970543,16 4,16 C1.790861,16 0,17.790861 0,20 C0,22.209139 1.790861,24 4,24 Z">
+                            </path>
+                            <path fill="#A259FF"
+                              d="M4,16 C4.73637967,16 6.069713,16 8,16 L8,8 C6.069713,8 4.73637967,8 4,8 C1.790861,8 0,9.790861 0,12 C0,14.209139 1.790861,16 4,16 Z">
+                            </path>
+                            <path fill="#F24E1E"
+                              d="M4,8 C4.73637967,8 6.069713,8 8,8 L8,0 C6.069713,0 4.73637967,0 4,0 C1.790861,0 0,1.790861 0,4 C0,6.209139 1.790861,8 4,8 Z">
+                            </path>
+                            <path fill="#FF7262"
+                              d="M12,8 L8,8 L8,8 L8,0 L12,0 L12,0 C14.209139,0 16,1.790861 16,4 C16,6.209139 14.209139,8 12,8 Z">
+                            </path>
+                          </g>
+                        </svg>
+                        Figma
+                      </li>
+                      <li>
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+                          <rect x="3" y="3" width="18" height="14" rx="2" ry="2" fill="none" stroke="#000"
+                            stroke-width="2" />
+                          <circle cx="6" cy="6" r="1" fill="#000" />
+                          <circle cx="9" cy="6" r="1" fill="#000" />
+                          <line x1="12" y1="6" x2="18" y2="6" stroke="#000" stroke-width="2" />
+                          <line x1="12" y1="9" x2="18" y2="9" stroke="#000" stroke-width="2" />
+                          <line x1="6" y1="9" x2="9" y2="9" stroke="#000" stroke-width="2" />
+                        </svg>
+                        UI / UX
+                      </li>
+                    </ul>
+
+                  </blockquote>
                 </div>
               </div>
             </div>
@@ -601,331 +888,73 @@
     </div>
 
 
+    <!-- footer -->
+    <div class="footer text-English">
+      <div class="row">
+        <div class="col d-flex justify-content-center pt-5 pb-5 ">CONTACT ME</div>
+      </div>
+      <div class="row ">
+        <div class="col footer-contact col-12 d-flex justify-content-between pb-5">
+
+          <a class="footer-github " href="https://github.com/tsai-yu-xuan" target="_blank"><svg
+              xmlns="http://www.w3.org/2000/svg" width="25" height="25" class="bi bi-github" viewBox="0 0 16 16">
+              <path
+                d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8" />
+            </svg></a>
+
+          <a class="footer-tel " href="tel:+886-986881609">
+            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" class="bi bi-telephone-fill"
+              viewBox="0 0 16 16">
+              <path
+                d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.68.68 0 0 0 .178.643l2.457 2.457a.68.68 0 0 0 .644.178l2.189-.547a1.75 1.75 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.6 18.6 0 0 1-7.01-4.42 18.6 18.6 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877z" />
+            </svg>
+          </a>
+
+          <a class="footer-mail" href="mailto:a0986881609@gmail.com" target="_blank">
+            <svg height="25px" width="25px" version="1.1" id="_x32_" xmlns="http://www.w3.org/2000/svg"
+              xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 512 512" xml:space="preserve">
+              <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+              <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+              <g id="SVGRepo_iconCarrier">
+                <g>
+                  <path
+                    d="M440.917,67.925H71.083C31.827,67.925,0,99.752,0,139.008v233.984c0,39.256,31.827,71.083,71.083,71.083 h369.834c39.255,0,71.083-31.827,71.083-71.083V139.008C512,99.752,480.172,67.925,440.917,67.925z M178.166,321.72l-99.54,84.92 c-7.021,5.992-17.576,5.159-23.567-1.869c-5.992-7.021-5.159-17.576,1.87-23.567l99.54-84.92c7.02-5.992,17.574-5.159,23.566,1.87 C186.027,305.174,185.194,315.729,178.166,321.72z M256,289.436c-13.314-0.033-26.22-4.457-36.31-13.183l0.008,0.008l-0.032-0.024 c0.008,0.008,0.017,0.008,0.024,0.016L66.962,143.694c-6.98-6.058-7.723-16.612-1.674-23.583c6.057-6.98,16.612-7.723,23.582-1.674 l152.771,132.592c3.265,2.906,8.645,5.004,14.359,4.971c5.706,0.017,10.995-2.024,14.44-5.028l0.074-0.065l152.615-132.469 c6.971-6.049,17.526-5.306,23.583,1.674c6.048,6.97,5.306,17.525-1.674,23.583l-152.77,132.599 C282.211,284.929,269.322,289.419,256,289.436z M456.948,404.771c-5.992,7.028-16.547,7.861-23.566,1.869l-99.54-84.92 c-7.028-5.992-7.861-16.546-1.869-23.566c5.991-7.029,16.546-7.861,23.566-1.87l99.54,84.92 C462.107,387.195,462.94,397.75,456.948,404.771z">
+                  </path>
+                </g>
+              </g>
+            </svg>
+          </a>
 
 
 
-    <!--  技能 Skills-->
-    <div class="skill-body row text-chinese" id="SKILL">
-      <div class="d-flex justify-content-center">
-        <h1 class="card-header  mb-5" data-aos="flip-up" data-aos-duration="2000"
-          data-aos-anchor-placement="center-center">技能 SKILL</h1>
-        <!-- <h1 class="card-header skill-text">SKILL</h1> -->
+
+
+
+
+        </div>
       </div>
       <div class="row">
-        <div class="col-xl-4">
-          <div class="card" data-aos="zoom-in" data-aos-duration="2000">
-            <div class="skill-title p-3 text-center">
-              <svg xmlns="http://www.w3.org/2000/svg" width="80" height="80" fill="currentColor"
-                class="bi bi-filetype-html" viewBox="0 0 16 16">
-                <path fill-rule="evenodd"
-                  d="M14 4.5V11h-1V4.5h-2A1.5 1.5 0 0 1 9.5 3V1H4a1 1 0 0 0-1 1v9H2V2a2 2 0 0 1 2-2h5.5zm-9.736 7.35v3.999h-.791v-1.714H1.79v1.714H1V11.85h.791v1.626h1.682V11.85h.79Zm2.251.662v3.337h-.794v-3.337H4.588v-.662h3.064v.662zm2.176 3.337v-2.66h.038l.952 2.159h.516l.946-2.16h.038v2.661h.715V11.85h-.8l-1.14 2.596H9.93L8.79 11.85h-.805v3.999zm4.71-.674h1.696v.674H12.61V11.85h.79v3.325Z" />
-              </svg>
-              <h4>前端開發</h4>
-              <hr>
-              <div class="card-body ">
-                <blockquote class="blockquote mb-0">
-                  <ul>
-                    <li>
-                      <svg width="25px" hight="25px" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48">
-                        <path fill="#E65100" d="M41,5H7l3,34l14,4l14-4L41,5L41,5z"></path>
-                        <path fill="#FF6D00" d="M24 8L24 39.9 35.2 36.7 37.7 8z"></path>
-                        <path fill="#FFF"
-                          d="M24,25v-4h8.6l-0.7,11.5L24,35.1v-4.2l4.1-1.4l0.3-4.5H24z M32.9,17l0.3-4H24v4H32.9z"></path>
-                        <path fill="#EEE"
-                          d="M24,30.9v4.2l-7.9-2.6L15.7,27h4l0.2,2.5L24,30.9z M19.1,17H24v-4h-9.1l0.7,12H24v-4h-4.6L19.1,17z">
-                        </path>
-                      </svg>
-                      HTML
-                    </li>
-                    <li>
-                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" width="25px" hight="25px">
-                        <path fill="#0277BD" d="M41,5H7l3,34l14,4l14-4L41,5L41,5z"></path>
-                        <path fill="#039BE5" d="M24 8L24 39.9 35.2 36.7 37.7 8z"></path>
-                        <path fill="#FFF"
-                          d="M33.1 13L24 13 24 17 28.9 17 28.6 21 24 21 24 25 28.4 25 28.1 29.5 24 30.9 24 35.1 31.9 32.5 32.6 21 32.6 21z">
-                        </path>
-                        <path fill="#EEE"
-                          d="M24,13v4h-8.9l-0.3-4H24z M19.4,21l0.2,4H24v-4H19.4z M19.8,27h-4l0.3,5.5l7.9,2.6v-4.2l-4.1-1.4L19.8,27z">
-                        </path>
-                      </svg>
-                      CSS
-                    </li>
-                    <li>
-                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" width="25px" hight="25px">
-                        <path fill="#f06292"
-                          d="M39.867,25.956c-1.538,0.008-2.87,0.377-3.986,0.928c-0.408-0.815-0.822-1.532-0.891-2.065 c-0.081-0.622-0.175-0.994-0.077-1.735c0.098-0.741,0.527-1.791,0.521-1.87c-0.006-0.079-0.096-0.456-0.983-0.463 c-0.887-0.006-1.646,0.171-1.735,0.405c-0.089,0.234-0.26,0.761-0.366,1.311c-0.155,0.804-1.771,3.673-2.688,5.173 c-0.3-0.586-0.555-1.102-0.608-1.51c-0.081-0.622-0.175-0.994-0.077-1.735c0.098-0.741,0.527-1.791,0.521-1.87 c-0.006-0.079-0.096-0.456-0.983-0.463c-0.887-0.006-1.646,0.171-1.735,0.405c-0.089,0.234-0.185,0.781-0.366,1.311 c-0.182,0.529-2.329,5.314-2.892,6.555c-0.287,0.632-0.536,1.14-0.712,1.486c-0.001-0.001-0.001-0.002-0.001-0.002 s-0.011,0.023-0.029,0.062c-0.151,0.295-0.24,0.458-0.24,0.458s0.001,0.002,0.003,0.006c-0.12,0.217-0.248,0.418-0.311,0.418 c-0.044,0-0.133-0.577,0.019-1.369c0.32-1.66,1.087-4.248,1.08-4.338c-0.004-0.046,0.143-0.497-0.501-0.733 c-0.626-0.229-0.849,0.153-0.906,0.154c-0.055,0.001-0.096,0.135-0.096,0.135s0.697-2.911-1.33-2.911 c-1.268,0-3.024,1.387-3.889,2.644c-0.546,0.298-1.715,0.936-2.954,1.617c-0.476,0.262-0.962,0.529-1.423,0.783 c-0.031-0.035-0.063-0.069-0.095-0.104c-2.459-2.623-7.003-4.478-6.811-8.005c0.07-1.282,0.516-4.658,8.733-8.752 c6.731-3.354,12.12-2.431,13.051-0.386c1.33,2.923-2.88,8.354-9.87,9.138c-2.663,0.299-4.066-0.734-4.415-1.118 c-0.367-0.405-0.422-0.423-0.559-0.347c-0.223,0.124-0.082,0.481,0,0.694c0.209,0.543,1.065,1.506,2.525,1.986 c1.285,0.422,4.412,0.653,8.193-0.81c4.236-1.638,7.543-6.196,6.571-10.005c-0.988-3.874-7.412-5.148-13.492-2.988 C12.44,9.332,8.523,11.35,5.706,13.984c-3.349,3.132-3.883,5.859-3.663,6.998c0.782,4.048,6.361,6.684,8.595,8.637 c-0.11,0.061-0.214,0.118-0.308,0.17c-1.12,0.554-5.373,2.78-6.437,5.131c-1.207,2.667,0.192,4.581,1.118,4.839 c2.869,0.798,5.813-0.638,7.396-2.998c1.582-2.359,1.389-5.432,0.663-6.834c-0.009-0.017-0.019-0.034-0.028-0.052 c0.289-0.171,0.584-0.345,0.876-0.517c0.57-0.335,1.13-0.647,1.615-0.911c-0.272,0.744-0.471,1.637-0.574,2.926 c-0.122,1.514,0.499,3.471,1.311,4.241c0.358,0.339,0.788,0.347,1.06,0.347c0.945,0,1.376-0.786,1.851-1.716 c0.582-1.14,1.099-2.468,1.099-2.468s-0.648,3.586,1.118,3.586c0.644,0,1.291-0.835,1.58-1.26c0.001,0.005,0.001,0.007,0.001,0.007 s0.017-0.028,0.05-0.083c0.067-0.102,0.105-0.167,0.105-0.167s0.001-0.007,0.003-0.019c0.259-0.449,0.833-1.473,1.693-3.162 c1.112-2.182,2.178-4.916,2.178-4.916s0.099,0.668,0.424,1.774c0.191,0.65,0.597,1.369,0.918,2.059 c-0.258,0.358-0.416,0.563-0.416,0.563s0.001,0.004,0.004,0.011c-0.206,0.274-0.437,0.569-0.679,0.857 c-0.878,1.045-1.923,2.239-2.063,2.583c-0.165,0.406-0.126,0.704,0.193,0.945c0.233,0.175,0.647,0.203,1.08,0.174 c0.789-0.053,1.343-0.249,1.617-0.368c0.427-0.151,0.924-0.388,1.39-0.731c0.861-0.633,1.38-1.538,1.33-2.738 c-0.028-0.661-0.238-1.316-0.505-1.934c0.078-0.112,0.156-0.226,0.235-0.34c1.357-1.984,2.41-4.164,2.41-4.164 s0.099,0.668,0.424,1.774c0.164,0.559,0.489,1.17,0.781,1.768c-1.276,1.037-2.067,2.242-2.342,3.032 c-0.508,1.462-0.11,2.124,0.636,2.275c0.338,0.068,0.816-0.087,1.175-0.239c0.447-0.148,0.984-0.395,1.486-0.764 c0.861-0.633,1.689-1.519,1.639-2.718c-0.023-0.546-0.171-1.088-0.372-1.608c1.082-0.451,2.482-0.701,4.266-0.493 c3.827,0.447,4.577,2.836,4.434,3.836c-0.144,1-0.946,1.55-1.215,1.716c-0.268,0.166-0.35,0.224-0.328,0.347 c0.033,0.179,0.157,0.173,0.386,0.134c0.315-0.053,2.009-0.813,2.082-2.659C46.089,28.509,43.844,25.935,39.867,25.956z M10.37,35.9 c-1.268,1.383-3.038,1.905-3.798,1.465c-0.82-0.475-0.495-2.511,1.06-3.979c0.948-0.894,2.172-1.718,2.984-2.225 c0.185-0.111,0.456-0.274,0.786-0.472c0.055-0.031,0.086-0.048,0.086-0.048l-0.001-0.002c0.064-0.038,0.129-0.077,0.196-0.118 C12.25,32.61,11.701,34.449,10.37,35.9z M19.605,29.623c-0.441,1.076-1.365,3.83-1.928,3.682c-0.483-0.127-0.777-2.22-0.096-4.28 c0.342-1.037,1.074-2.276,1.504-2.757c0.692-0.774,1.454-1.027,1.639-0.713C20.959,25.955,19.882,28.948,19.605,29.623z M27.234,33.263c-0.187,0.098-0.359,0.159-0.438,0.112c-0.059-0.035,0.077-0.164,0.077-0.164s0.954-1.027,1.33-1.494 c0.219-0.272,0.472-0.595,0.748-0.955c0.002,0.036,0.003,0.072,0.003,0.107C28.952,32.099,27.764,32.929,27.234,33.263z M33.111,31.923c-0.14-0.099-0.116-0.42,0.343-1.421c0.18-0.393,0.592-1.054,1.306-1.686c0.083,0.26,0.133,0.509,0.132,0.741 C34.883,31.105,33.779,31.683,33.111,31.923z">
-                        </path>
-                      </svg>
-                      Scss / Sass
-                    </li>
-                    <li>
-                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" width="25px" height="25px">
-                        <path fill="#673ab7"
-                          d="M42,37c0,2.762-2.238,5-5,5H11c-2.761,0-5-2.238-5-5V11c0-2.762,2.239-5,5-5h26c2.762,0,5,2.238,5,5 V37z">
-                        </path>
-                        <path fill="#fff"
-                          d="M33.03,25.6c-0.65-0.9-1.59-1.52-2.8-1.85c0,0,1.02-0.37,1.94-1.75c0.55-0.88,0.83-1.94,0.83-3.18 c0-2.15-0.78-3.8-2.34-4.93C29.1,12.76,27.34,12,24.35,12H15v24h10.43c2.83-0.02,4.96-0.63,6.41-1.8c1.44-1.19,2.16-2.95,2.16-5.3 C34,27.6,33.68,26.5,33.03,25.6z M21,16c0,0,4.17,0,4.25,0c1.52,0,2.75,1.23,2.75,2.75c0,1.52-1.23,2.75-2.75,2.75 c-0.08,0-4.25,0-4.25,0V16z M26,32h-5v-6h5c1.66,0,3,1.34,3,3C29,30.66,27.66,32,26,32z">
-                        </path>
-                      </svg>
-                      Bootstrap
-                    </li>
-                    <li>
-                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" width="25px" height="25px">
-                        <path fill="#ffd600" d="M6,42V6h36v36H6z"></path>
-                        <path fill="#000001"
-                          d="M29.538 32.947c.692 1.124 1.444 2.201 3.037 2.201 1.338 0 2.04-.665 2.04-1.585 0-1.101-.726-1.492-2.198-2.133l-.807-.344c-2.329-.988-3.878-2.226-3.878-4.841 0-2.41 1.845-4.244 4.728-4.244 2.053 0 3.528.711 4.592 2.573l-2.514 1.607c-.553-.988-1.151-1.377-2.078-1.377-.946 0-1.545.597-1.545 1.377 0 .964.6 1.354 1.985 1.951l.807.344C36.452 29.645 38 30.839 38 33.523 38 36.415 35.716 38 32.65 38c-2.999 0-4.702-1.505-5.65-3.368L29.538 32.947zM17.952 33.029c.506.906 1.275 1.603 2.381 1.603 1.058 0 1.667-.418 1.667-2.043V22h3.333v11.101c0 3.367-1.953 4.899-4.805 4.899-2.577 0-4.437-1.746-5.195-3.368L17.952 33.029z">
-                        </path>
-                      </svg>
-                      JavaScript
-                    </li>
-                    <li>
-                      <svg xmlns="http://www.w3.org/2000/svg" height="25" width="25" viewBox="0 0 32 32" fill="#0868ac">
-                        <path
-                          d="M2.144 7.705c-2.83 4.07-2.48 9.364-.316 13.7.05.104.105.206.158.308l.1.195c.02.038.042.075.063.112.037.07.075.134.113.202l.207.354.118.194.24.375.102.158c.113.168.228.336.347.5l.068.092a16.39 16.39 0 0 0 .316.42l.12.152.292.36.112.134c.133.157.27.313.407.465.014.015.02.02.024.026a20.44 20.44 0 0 0 .414.436l.133.134.33.324.135.13a16.98 16.98 0 0 0 .453.412l.496.42.17.136.343.268.183.14.385.276.18.127c.123.085.248.166.374.247l.162.108a20.81 20.81 0 0 0 .585.358l.162.1.44.246c.08.043.162.084.243.125l.314.163.073.035.13.062.498.23.105.047a17.83 17.83 0 0 0 .581.241l.14.056.548.203.07.024a21.72 21.72 0 0 0 .61.2l.148.044c.2.063.416.14.63.178 13.694 2.497 17.67-8.23 17.67-8.23-3.34 4.352-9.27 5.5-14.9 4.222-.213-.048-.42-.114-.627-.176l-.156-.047a18.62 18.62 0 0 1-.604-.197l-.083-.03a20.87 20.87 0 0 1-.532-.197l-.15-.06a15.16 15.16 0 0 1-.575-.24l-.115-.05-.485-.226-.14-.067c-.126-.06-.25-.127-.375-.2l-.25-.13c-.152-.08-.3-.166-.45-.252l-.152-.085a21.76 21.76 0 0 1-.585-.358c-.053-.034-.105-.07-.158-.105l-.416-.277c-.046-.03-.1-.064-.134-.094l-.394-.285-.175-.132-.355-.278-.158-.127-.442-.373a.73.73 0 0 0-.05-.04l-.465-.423-.13-.126-.332-.33-.13-.13c-.14-.143-.276-.287-.4-.434-.007-.007-.014-.014-.02-.022a16.98 16.98 0 0 1-.416-.474l-.1-.13-.3-.37-.1-.137-.346-.46C2.982 15.6 1.86 9.722 4.354 4.902m6.58-.625c-2.048 2.947-1.937 6.9-.34 10.008a13.06 13.06 0 0 0 .906 1.512c.307.44.647.963 1.054 1.316.148.163.302.32.46.477l.12.12a13.41 13.41 0 0 0 .469.436c.007.005.012.012.02.017.182.16.366.3.553.458l.124.097a13.46 13.46 0 0 0 .574.419l.017.012c.086.06.174.115.262.173.042.027.082.056.124.082a11.64 11.64 0 0 0 .425.26l.06.035.376.2c.044.025.1.046.134.07l.263.136c.013.007.027.012.04.018a11.39 11.39 0 0 0 .548.255l.12.05a14.16 14.16 0 0 0 .45.182l.192.07a14.26 14.26 0 0 0 .413.143l.187.06c.197.06.4.14.597.173 10.573 1.752 13.014-6.4 13.014-6.4-2.2 3.17-6.46 4.68-11.008 3.5a13.06 13.06 0 0 1-.599-.173c-.06-.018-.12-.038-.18-.058l-.42-.144-.2-.07a15.08 15.08 0 0 1-.45-.182l-.122-.05a12.58 12.58 0 0 1-.552-.256l-.277-.14-.16-.082a13.16 13.16 0 0 1-.35-.197l-.084-.047a12.34 12.34 0 0 1-.424-.26c-.043-.027-.085-.057-.128-.085l-.275-.182a13.24 13.24 0 0 1-.57-.418l-.13-.1c-2-1.572-3.568-3.72-4.318-6.154-.786-2.525-.617-5.36.745-7.66m5.732-.183C17.12 3.5 17 5.698 17.838 7.66c.883 2.083 2.693 3.716 4.806 4.5l.262.1.116.036.377.1c5.838 1.128 7.42-2.996 7.843-3.603-1.387 1.997-3.718 2.476-6.578 1.782-.226-.055-.474-.137-.692-.214a8.46 8.46 0 0 1-.822-.341 8.5 8.5 0 0 1-1.441-.879C19.15 7.2 17.56 3.486 19.23.47">
-                        </path>
-                      </svg>
-                      jQuery
-                    </li>
-                    <li>
-                      <svg width="25px" hight="25px" xmlns="http://www.w3.org/2000/svg"
-                        enable-background="new 0 0 2500 2165.1" viewBox="0 0 2500 2165.1">
-                        <path d="m1538.7 0-288.7 500-288.7-500h-961.3l1250 2165.1 1250-2165.1z" fill="#4dba87"></path>
-                        <path d="m1538.7 0-288.7 500-288.7-500h-461.3l750 1299 750-1299z" fill="#435466"></path>
-                      </svg>
-                      Vue.js
-                    </li>
-                    <li>
-                      <svg width="25px" hight="25px" xmlns="http://www.w3.org/2000/svg"
-                        enable-background="new 0 0 2187.5 2500" viewBox="0 0 2187.5 2500">
-                        <path d="m1093.8 0h-511l511 1208" fill="#1697f6"></path>
-                        <path d="m1093.8 1562.5v937.5l-1093.8-2135.5h573zm0-1562.5h511l-511 1208" fill="#7bc6ff"></path>
-                        <path d="m1614.5 364.5h573l-1093.7 2135.5v-937.5z" fill="#aeddff"></path>
-                      </svg>
-                      Vuetify
-                    </li>
-                  </ul>
-                </blockquote>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-xl-4">
-          <div class="card" data-aos="zoom-in" data-aos-duration="2300">
-            <div class="skill-title p-3 text-center">
-              <svg xmlns="http://www.w3.org/2000/svg" width="80" height="80" fill="currentColor"
-                class="bi bi-file-earmark-code" viewBox="0 0 16 16">
-                <path
-                  d="M14 4.5V14a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V2a2 2 0 0 1 2-2h5.5zm-3 0A1.5 1.5 0 0 1 9.5 3V1H4a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1V4.5z" />
-                <path
-                  d="M8.646 6.646a.5.5 0 0 1 .708 0l2 2a.5.5 0 0 1 0 .708l-2 2a.5.5 0 0 1-.708-.708L10.293 9 8.646 7.354a.5.5 0 0 1 0-.708m-1.292 0a.5.5 0 0 0-.708 0l-2 2a.5.5 0 0 0 0 .708l2 2a.5.5 0 0 0 .708-.708L5.707 9l1.647-1.646a.5.5 0 0 0 0-.708" />
-              </svg>
-              <h4>後端技術</h4>
-              <hr>
-              <div class="card-body">
-                <blockquote class="blockquote mb-0">
-                  <ul>
-                    <li>
-                      <svg width="25px" hight="25px" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48">
-                        <path fill="#388e3c"
-                          d="M17.204 19.122l-4.907 2.715C12.113 21.938 12 22.126 12 22.329v5.433c0 .203.113.39.297.492l4.908 2.717c.183.101.41.101.593 0l4.907-2.717C22.887 28.152 23 27.965 23 27.762v-5.433c0-.203-.113-.39-.297-.492l-4.906-2.715c-.092-.051-.195-.076-.297-.076-.103 0-.205.025-.297.076M42.451 24.013l-.818.452c-.031.017-.049.048-.049.082v.906c0 .034.019.065.049.082l.818.453c.031.017.068.017.099 0l.818-.453c.03-.017.049-.048.049-.082v-.906c0-.034-.019-.065-.05-.082l-.818-.452C42.534 24.004 42.517 24 42.5 24S42.466 24.004 42.451 24.013">
-                        </path>
-                        <path fill="#37474f"
-                          d="M35.751,13.364l-2.389-1.333c-0.075-0.042-0.167-0.041-0.241,0.003 c-0.074,0.044-0.12,0.123-0.12,0.209L33,20.295l-2.203-1.219C30.705,19.025,30.602,19,30.5,19c-0.102,0-0.205,0.025-0.297,0.076 h0.001l-4.907,2.715C25.113,21.892,25,22.08,25,22.282v5.433c0,0.203,0.113,0.39,0.297,0.492l4.908,2.717 c0.183,0.101,0.41,0.101,0.593,0l4.907-2.717C35.887,28.106,36,27.918,36,27.715V13.788C36,13.612,35.904,13.45,35.751,13.364z M32.866,26.458l-2.23,1.235c-0.083,0.046-0.186,0.046-0.269,0l-2.231-1.235C28.051,26.412,28,26.326,28,26.234v-2.47 c0-0.092,0.051-0.177,0.135-0.224l2.231-1.234h-0.001c0.042-0.023,0.088-0.034,0.135-0.034c0.047,0,0.093,0.012,0.135,0.034 l2.23,1.234C32.949,23.587,33,23.673,33,23.765v2.47C33,26.326,32.949,26.412,32.866,26.458z">
-                        </path>
-                        <path fill="#2e7d32"
-                          d="M17.204,19.122L12,27.762c0,0.203,0.113,0.39,0.297,0.492l4.908,2.717 c0.183,0.101,0.41,0.101,0.593,0L23,22.329c0-0.203-0.113-0.39-0.297-0.492l-4.906-2.715c-0.092-0.051-0.195-0.076-0.297-0.076 c-0.103,0-0.205,0.025-0.297,0.076">
-                        </path>
-                        <path fill="#4caf50"
-                          d="M17.204,19.122l-4.907,2.715C12.113,21.938,12,22.126,12,22.329l5.204,8.642 c0.183,0.101,0.41,0.101,0.593,0l4.907-2.717C22.887,28.152,23,27.965,23,27.762l-5.203-8.64c-0.092-0.051-0.195-0.076-0.297-0.076 c-0.103,0-0.205,0.025-0.297,0.076">
-                        </path>
-                        <path fill="#37474f"
-                          d="M47.703 21.791l-4.906-2.715C42.705 19.025 42.602 19 42.5 19c-.102 0-.205.025-.297.076h.001l-4.907 2.715C37.114 21.892 37 22.084 37 22.294v5.411c0 .209.114.402.297.503l4.908 2.717c.184.102.409.102.593 0l2.263-1.253c.207-.115.206-.412-.002-.526l-4.924-2.687C40.052 26.412 40 26.325 40 26.231v-2.466c0-.092.05-.177.13-.221l2.235-1.236h-.001c.042-.023.088-.034.135-.034.047 0 .093.012.135.034l2.235 1.237c.08.044.13.129.13.221v2.012c0 .086.046.166.121.209.075.042.167.042.242-.001l2.398-1.393c.148-.086.24-.245.24-.417v-1.88C48 22.085 47.886 21.892 47.703 21.791zM10.703 21.791l-4.906-2.715C5.705 19.025 5.602 19 5.5 19c-.102 0-.205.025-.297.076h.001l-4.907 2.715C.114 21.892 0 22.084 0 22.294v7.465c0 .086.046.166.121.209.075.042.167.042.242-.001l2.398-1.393C2.909 28.488 3 28.329 3 28.157v-4.393c0-.092.05-.177.13-.221l2.235-1.236H5.365c.042-.023.088-.034.135-.034.047 0 .093.012.135.034l2.235 1.237C7.95 23.588 8 23.673 8 23.765v4.393c0 .172.091.331.24.417l2.398 1.393c.075.043.167.043.242.001C10.954 29.925 11 29.845 11 29.759v-7.464C11 22.085 10.886 21.892 10.703 21.791z">
-                        </path>
-                      </svg>
-                      Node.js
-                    </li>
-                    <li>
-                      <svg width="25px" hight="25px" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48">
-                        <path fill="#5d4037"
-                          d="M42,17.3C42,37.8,24,44,24,44S6,37.8,6,17.3c0-2.5,0.2-4.6,0.4-6.3c0.3-2.5,2-4.5,4.4-5.1 C13.9,5,18.8,4,24,4s10.1,1,13.3,1.9c2.4,0.6,4.1,2.7,4.4,5.1C41.8,12.7,42,14.9,42,17.3z">
-                        </path>
-                        <path fill="#4caf50"
-                          d="M24,7c4.9,0,9.5,1,12.5,1.8c1.2,0.3,2,1.3,2.2,2.6c0.2,1.9,0.3,3.9,0.3,5.9c0,15.6-11.5,21.9-15,23.4 c-3.5-1.6-15-7.9-15-23.4c0-2,0.1-4,0.3-5.9c0.1-1.3,1-2.3,2.2-2.6C14.5,8,19.1,7,24,7 M24,4c-5.2,0-10.1,1-13.3,1.9 C8.4,6.5,6.6,8.6,6.4,11C6.2,12.7,6,14.9,6,17.3C6,37.8,24,44,24,44s18-6.2,18-26.7c0-2.5-0.2-4.6-0.4-6.3c-0.3-2.5-2-4.5-4.4-5.1 C34.1,5,29.2,4,24,4L24,4z">
-                        </path>
-                        <path fill="#dcedc8" d="M23 28H25V36H23z"></path>
-                        <path fill="#4caf50"
-                          d="M24,10c0,0-6,5-6,13c0,5.2,3.3,8.5,5,10l1-3l1,3c1.7-1.5,5-4.8,5-10C30,15,24,10,24,10z">
-                        </path>
-                        <path fill="#81c784" d="M24,10c0,0-6,5-6,13c0,5.2,3.3,8.5,5,10l1-3V10z"></path>
-                      </svg>
-                      MongoDB
-                    </li>
-                    <li>
-                      <svg width="25px" hight="25px" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48">
-                        <path fill="#F4511E"
-                          d="M42.2,22.1L25.9,5.8C25.4,5.3,24.7,5,24,5c0,0,0,0,0,0c-0.7,0-1.4,0.3-1.9,0.8l-3.5,3.5l4.1,4.1c0.4-0.2,0.8-0.3,1.3-0.3c1.7,0,3,1.3,3,3c0,0.5-0.1,0.9-0.3,1.3l4,4c0.4-0.2,0.8-0.3,1.3-0.3c1.7,0,3,1.3,3,3s-1.3,3-3,3c-1.7,0-3-1.3-3-3c0-0.5,0.1-0.9,0.3-1.3l-4-4c-0.1,0-0.2,0.1-0.3,0.1v10.4c1.2,0.4,2,1.5,2,2.8c0,1.7-1.3,3-3,3s-3-1.3-3-3c0-1.3,0.8-2.4,2-2.8V18.8c-1.2-0.4-2-1.5-2-2.8c0-0.5,0.1-0.9,0.3-1.3l-4.1-4.1L5.8,22.1C5.3,22.6,5,23.3,5,24c0,0.7,0.3,1.4,0.8,1.9l16.3,16.3c0,0,0,0,0,0c0.5,0.5,1.2,0.8,1.9,0.8s1.4-0.3,1.9-0.8l16.3-16.3c0.5-0.5,0.8-1.2,0.8-1.9C43,23.3,42.7,22.6,42.2,22.1z">
-                        </path>
-                      </svg>
-                      Git 版本控管
-                    </li>
-                  </ul>
-
-                </blockquote>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-xl-4">
-          <div class="card" data-aos="zoom-in" data-aos-duration="2000">
-            <div class="skill-title p-3 text-center">
-              <svg xmlns="http://www.w3.org/2000/svg" width="80" height="80" fill="currentColor" class="bi bi-brush"
-                viewBox="0 0 16 16">
-                <path
-                  d="M15.825.12a.5.5 0 0 1 .132.584c-1.53 3.43-4.743 8.17-7.095 10.64a6.1 6.1 0 0 1-2.373 1.534c-.018.227-.06.538-.16.868-.201.659-.667 1.479-1.708 1.74a8.1 8.1 0 0 1-3.078.132 4 4 0 0 1-.562-.135 1.4 1.4 0 0 1-.466-.247.7.7 0 0 1-.204-.288.62.62 0 0 1 .004-.443c.095-.245.316-.38.461-.452.394-.197.625-.453.867-.826.095-.144.184-.297.287-.472l.117-.198c.151-.255.326-.54.546-.848.528-.739 1.201-.925 1.746-.896q.19.012.348.048c.062-.172.142-.38.238-.608.261-.619.658-1.419 1.187-2.069 2.176-2.67 6.18-6.206 9.117-8.104a.5.5 0 0 1 .596.04M4.705 11.912a1.2 1.2 0 0 0-.419-.1c-.246-.013-.573.05-.879.479-.197.275-.355.532-.5.777l-.105.177c-.106.181-.213.362-.32.528a3.4 3.4 0 0 1-.76.861c.69.112 1.736.111 2.657-.12.559-.139.843-.569.993-1.06a3 3 0 0 0 .126-.75zm1.44.026c.12-.04.277-.1.458-.183a5.1 5.1 0 0 0 1.535-1.1c1.9-1.996 4.412-5.57 6.052-8.631-2.59 1.927-5.566 4.66-7.302 6.792-.442.543-.795 1.243-1.042 1.826-.121.288-.214.54-.275.72v.001l.575.575zm-4.973 3.04.007-.005zm3.582-3.043.002.001h-.002z" />
-              </svg>
-
-
-              <h4>視覺設計</h4>
-              <hr>
-              <div class="card-body">
-                <blockquote class="blockquote mb-0">
-                  <ul>
-                    <li>
-                      <svg xmlns="http://www.w3.org/2000/svg" width="25px" hight="25px" viewBox="0 0 32 32">
-                        <title>file_type_photoshop</title>
-                        <path d="M3.167,3.517H28.833V28.483H3.167Z" style="fill:#0c0824"></path>
-                        <path
-                          d="M3.167,3.517H28.833V28.483H3.167ZM2,29.65H30V2.35H2Zm18.877-16.1c-.922,0-1.237.467-1.237.852,0,.42.21.712,1.447,1.353,1.832.887,2.4,1.738,2.4,2.987,0,1.867-1.423,2.87-3.348,2.87a5.076,5.076,0,0,1-2.392-.5c-.082-.035-.093-.093-.093-.187V19.208c0-.117.058-.152.14-.093a4.33,4.33,0,0,0,2.345.688c.922,0,1.307-.385,1.307-.91,0-.42-.268-.793-1.447-1.4-1.657-.793-2.345-1.6-2.345-2.94,0-1.505,1.178-2.753,3.22-2.753a5.365,5.365,0,0,1,2.088.327.258.258,0,0,1,.117.233v1.6c0,.093-.058.152-.175.117a3.941,3.941,0,0,0-2.03-.525ZM10.843,14.938c.268.023.478.023.945.023,1.365,0,2.648-.478,2.648-2.333,0-1.482-.922-2.228-2.473-2.228-.467,0-.91.023-1.12.035Zm-2.077-6.2c0-.082.163-.14.257-.14.747-.035,1.855-.058,3.01-.058,3.232,0,4.492,1.773,4.492,4.037,0,2.963-2.147,4.235-4.783,4.235-.443,0-.595-.023-.91-.023v4.48c0,.093-.035.14-.14.14H8.907c-.093,0-.14-.035-.14-.14V8.743Z"
-                          style="fill:#31c5f0"></path>
-                      </svg>
-
-                      Photoshop
-                    </li>
-                    <li>
-                      <svg width="25px" hight="25px" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" fill="none">
-                        <path
-                          d="M2 12.1333C2 8.58633 2 6.81283 2.69029 5.45806C3.29749 4.26637 4.26637 3.29749 5.45806 2.69029C6.81283 2 8.58633 2 12.1333 2H19.8667C23.4137 2 25.1872 2 26.5419 2.69029C27.7336 3.29749 28.7025 4.26637 29.3097 5.45806C30 6.81283 30 8.58633 30 12.1333V19.8667C30 23.4137 30 25.1872 29.3097 26.5419C28.7025 27.7336 27.7336 28.7025 26.5419 29.3097C25.1872 30 23.4137 30 19.8667 30H12.1333C8.58633 30 6.81283 30 5.45806 29.3097C4.26637 28.7025 3.29749 27.7336 2.69029 26.5419C2 25.1872 2 23.4137 2 19.8667V12.1333Z"
-                          fill="#330000"></path>
-                        <path
-                          d="M15.5686 19.5963H11.2297L10.3469 22.409C10.3224 22.5135 10.2262 22.5875 10.1215 22.5823H7.92384C7.79851 22.5823 7.75469 22.5117 7.79236 22.3704L11.549 11.2738C11.5866 11.1582 11.6242 11.0266 11.6617 10.8789C11.7109 10.6218 11.736 10.3606 11.7369 10.0987C11.7261 10.0213 11.7941 9.95294 11.8683 9.96378H14.8549C14.9424 9.96378 14.9924 9.9959 15.0051 10.0601L19.269 22.3897C19.3065 22.5182 19.269 22.5824 19.1563 22.5823H16.7144C16.6288 22.5921 16.547 22.5334 16.5266 22.4475L15.5686 19.5963ZM11.9059 17.1689H14.8737C14.3861 15.5027 13.8358 13.8584 13.3898 12.1793C12.9086 13.8613 12.3836 15.5365 11.9059 17.1689Z"
-                          fill="#FF9A00"></path>
-                        <path
-                          d="M21.8045 12.0058C21.6129 12.0137 21.4219 11.98 21.2438 11.907C21.0658 11.834 20.9048 11.7232 20.7714 11.582C20.6384 11.4346 20.535 11.2618 20.4673 11.0733C20.3996 10.8849 20.3689 10.6846 20.3769 10.4839C20.3701 10.2852 20.4042 10.0873 20.477 9.90305C20.5499 9.71881 20.6598 9.5524 20.7996 9.41468C20.938 9.27839 21.1014 9.17161 21.2804 9.10052C21.4593 9.02942 21.6502 8.99543 21.842 9.00049C22.2929 9.00049 22.6466 9.13856 22.9033 9.41468C23.0329 9.55818 23.1336 9.72648 23.1997 9.90995C23.2657 10.0934 23.2959 10.2885 23.2883 10.4839C23.2962 10.6853 23.2645 10.8864 23.1951 11.075C23.1258 11.2636 23.0201 11.436 22.8845 11.582C22.7428 11.7253 22.5736 11.8369 22.3878 11.9099C22.2019 11.9828 22.0033 12.0155 21.8045 12.0058ZM20.5084 22.3896V13.181C20.5084 13.0654 20.5583 13.0076 20.6587 13.0076H22.9691C23.0691 13.0076 23.1192 13.0654 23.1193 13.181V22.3896C23.1193 22.5182 23.0692 22.5824 22.9691 22.5823H20.6775C20.5648 22.5823 20.5084 22.5181 20.5084 22.3896Z"
-                          fill="#FF9A00"></path>
-                      </svg>
-                      Illustrator
-                    </li>
-                    <li>
-                      <svg width="25px" hight="25px" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-                        <g fill="none" fill-rule="evenodd" transform="translate(4)">
-                          <circle cx="12" cy="12" r="4" fill="#19BCFE"></circle>
-                          <path fill="#09CF83"
-                            d="M4,24 C6.209139,24 8,22.209139 8,20 C8,19.3969461 8,18.0636128 8,16 C6.20303877,16 4.86970543,16 4,16 C1.790861,16 0,17.790861 0,20 C0,22.209139 1.790861,24 4,24 Z">
-                          </path>
-                          <path fill="#A259FF"
-                            d="M4,16 C4.73637967,16 6.069713,16 8,16 L8,8 C6.069713,8 4.73637967,8 4,8 C1.790861,8 0,9.790861 0,12 C0,14.209139 1.790861,16 4,16 Z">
-                          </path>
-                          <path fill="#F24E1E"
-                            d="M4,8 C4.73637967,8 6.069713,8 8,8 L8,0 C6.069713,0 4.73637967,0 4,0 C1.790861,0 0,1.790861 0,4 C0,6.209139 1.790861,8 4,8 Z">
-                          </path>
-                          <path fill="#FF7262"
-                            d="M12,8 L8,8 L8,8 L8,0 L12,0 L12,0 C14.209139,0 16,1.790861 16,4 C16,6.209139 14.209139,8 12,8 Z">
-                          </path>
-                        </g>
-                      </svg>
-                      Figma
-                    </li>
-                    <li>
-                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
-                        <rect x="3" y="3" width="18" height="14" rx="2" ry="2" fill="none" stroke="#000"
-                          stroke-width="2" />
-                        <circle cx="6" cy="6" r="1" fill="#000" />
-                        <circle cx="9" cy="6" r="1" fill="#000" />
-                        <line x1="12" y1="6" x2="18" y2="6" stroke="#000" stroke-width="2" />
-                        <line x1="12" y1="9" x2="18" y2="9" stroke="#000" stroke-width="2" />
-                        <line x1="6" y1="9" x2="9" y2="9" stroke="#000" stroke-width="2" />
-                      </svg>
-                      UI / UX
-                    </li>
-                  </ul>
-
-                </blockquote>
-              </div>
-            </div>
-          </div>
-        </div>
+        <div class="col-12 d-flex justify-content-center pt-3 pb-5 "> © Copyright ALL Rights Reserved.</div>
       </div>
     </div>
-  </div>
-
-
-  <!-- footer -->
-  <div class="footer text-English">
-    <div class="row">
-      <div class="col d-flex justify-content-center pt-5 pb-5 ">CONTACT ME</div>
-    </div>
-    <div class="row ">
-      <div class="col footer-contact col-12 d-flex justify-content-between pb-5">
-
-        <a class="footer-github " href="https://github.com/tsai-yu-xuan" target="_blank"><svg
-            xmlns="http://www.w3.org/2000/svg" width="25" height="25" class="bi bi-github" viewBox="0 0 16 16">
-            <path
-              d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8" />
-          </svg></a>
-
-        <a class="footer-tel " href="tel:+886-986881609">
-          <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" class="bi bi-telephone-fill"
-            viewBox="0 0 16 16">
-            <path
-              d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.68.68 0 0 0 .178.643l2.457 2.457a.68.68 0 0 0 .644.178l2.189-.547a1.75 1.75 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.6 18.6 0 0 1-7.01-4.42 18.6 18.6 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877z" />
-          </svg>
-        </a>
-
-        <a class="footer-mail" href="mailto:a0986881609@gmail.com" target="_blank">
-          <svg height="25px" width="25px" version="1.1" id="_x32_" xmlns="http://www.w3.org/2000/svg"
-            xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 512 512" xml:space="preserve">
-            <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
-            <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
-            <g id="SVGRepo_iconCarrier">
-              <g>
-                <path
-                  d="M440.917,67.925H71.083C31.827,67.925,0,99.752,0,139.008v233.984c0,39.256,31.827,71.083,71.083,71.083 h369.834c39.255,0,71.083-31.827,71.083-71.083V139.008C512,99.752,480.172,67.925,440.917,67.925z M178.166,321.72l-99.54,84.92 c-7.021,5.992-17.576,5.159-23.567-1.869c-5.992-7.021-5.159-17.576,1.87-23.567l99.54-84.92c7.02-5.992,17.574-5.159,23.566,1.87 C186.027,305.174,185.194,315.729,178.166,321.72z M256,289.436c-13.314-0.033-26.22-4.457-36.31-13.183l0.008,0.008l-0.032-0.024 c0.008,0.008,0.017,0.008,0.024,0.016L66.962,143.694c-6.98-6.058-7.723-16.612-1.674-23.583c6.057-6.98,16.612-7.723,23.582-1.674 l152.771,132.592c3.265,2.906,8.645,5.004,14.359,4.971c5.706,0.017,10.995-2.024,14.44-5.028l0.074-0.065l152.615-132.469 c6.971-6.049,17.526-5.306,23.583,1.674c6.048,6.97,5.306,17.525-1.674,23.583l-152.77,132.599 C282.211,284.929,269.322,289.419,256,289.436z M456.948,404.771c-5.992,7.028-16.547,7.861-23.566,1.869l-99.54-84.92 c-7.028-5.992-7.861-16.546-1.869-23.566c5.991-7.029,16.546-7.861,23.566-1.87l99.54,84.92 C462.107,387.195,462.94,397.75,456.948,404.771z">
-                </path>
-              </g>
-            </g>
-          </svg>
-        </a>
 
 
 
 
 
+    <!-- ----------------------------------------------- -->
+    <!-- bootstrap JS CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"></script>
+    <!-- jquery -->
+    <script src="//code.jquery.com/jquery-3.2.1.min.js"></script>
+    <!-- fancybox燈箱效果 -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script>
 
-
-      </div>
-    </div>
-    <div class="row">
-      <div class="col-12 d-flex justify-content-center pt-3 pb-5 "> © Copyright ALL Rights Reserved.</div>
-    </div>
-  </div>
-
-
-
-
-
-  <!-- ----------------------------------------------- -->
-  <!-- bootstrap JS CDN -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-    crossorigin="anonymous"></script>
-  <!-- jquery -->
-  <script src="//code.jquery.com/jquery-3.2.1.min.js"></script>
-  <!-- fancybox燈箱效果 -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script>
-
-  <script>
-    AOS.init(); 
-  </script>
+    <script>
+      AOS.init(); 
+    </script>
 </body>
 
 </html>

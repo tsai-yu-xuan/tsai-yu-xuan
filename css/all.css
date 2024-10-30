@@ -8,6 +8,10 @@
 */
 
 /* 英文字體 */
+
+* {
+	box-sizing: border-box !important;
+}
 .text-English {
 	font-family: 'Kanit', sans-serif;
 	font-weight: 500;
@@ -25,7 +29,7 @@
 }
 
 body {
-	width: 100%;
+	width: 100vw;
 	background: #f9f4ea !important;
 }
 /* 網頁寬度 */
@@ -33,40 +37,89 @@ body {
 	width: 75%;
 	background: #f9f4ea;
 }
+@media (max-width: 992px) {
+	.box {
+		width: 100vw;
+		background: #f9f4ea;
+	}
+}
+
 /* 導覽列 */
 .navbar {
 	background: #f9f4ea !important;
+	width: 99%;
 }
 .navbar-brand img {
 	width: 120px;
 }
-.navbar-collapse {
-	flex-grow: 0 !important;
+
+/* .collapse, */
+.show,
+.navbar-nav {
+	/* 將導覽項目推至右側 */
 }
+
+.navbar-collapse {
+	width: fit-content !important;
+}
+
+/* @media (max-width: 992px) {
+	.navbar-collapse {
+		flex-basis: 100% !important;
+	}
+} */
+
 .container-fluid {
+	box-sizing: border-box;
 	width: 136px !important;
 	margin: 0 !important;
 }
 .nav-body {
+	margin-left: 0 !important;
 	/* width: 100%; */
 	font-size: 1rem;
 	/* background: #000; */
-	.nav-link {
-		padding-right: 20px !important;
-	}
+}
+
+.navbar-div {
+	margin-right: 25px !important;
 }
 .navbar-toggler {
 	margin-right: 20px !important;
 }
+
+@media (max-width: 992px) {
+	.navbar-div {
+		margin-right: 0px !important;
+	}
+	.nav-link {
+		padding-right: 0px !important;
+	}
+	.navbar-toggler {
+		margin-right: 0px !important;
+	}
+}
+
 /*  HELLOW 圖文區  */
 .hello-body {
+	box-sizing: border-box;
 	width: 100% !important;
 	margin: 0 auto !important;
 	padding-top: 15%;
-	padding-left: 12% !important;
-	padding-right: 12% !important;
+	/* padding-left: 12% !important; */
+	/* padding-right: 12% !important; */
 	padding-bottom: 6%;
 }
+
+@media (max-width: 992px) {
+	.hello-body {
+		padding-top: 15%;
+		padding-left: 0% !important;
+		padding-right: 0% !important;
+		padding-bottom: 6%;
+	}
+}
+
 @media (min-width: 1200px) {
 	.skill-img {
 		position: relative;
@@ -75,23 +128,23 @@ body {
 			position: absolute;
 			right: 0;
 			bottom: 0;
-			transform: translate(15%, 10%);
+			translate: (-5%, 2%);
 		}
 	}
 }
 
-@media (max-width: 1199px) {
+/* @media (max-width: 1199px) {
 	.skill-img img {
-		width: 520px !important;
-		height: 397px !important;
-		/* position: absolute; */
+		width: 100% !important;
+		height: 100% !important;
+
 		right: 0;
 		bottom: 0;
-		/* transform: translate(5%,15%); */
-	}
-}
 
-@media (max-width: 992px) {
+	}
+} */
+
+@media (max-width: 1199px) {
 	.skill-img img {
 		width: 100% !important;
 		height: 100% !important;
@@ -104,8 +157,15 @@ body {
 
 .navbar {
 	position: fixed !important;
-	width: 75% !important;
+	width: 76% !important;
 	z-index: 1000;
+}
+@media (max-width: 992px) {
+	.navbar {
+		position: fixed !important;
+		width: 100vw !important;
+		z-index: 1000;
+	}
 }
 
 /* Hi I’m Yu-Xuan!  */
@@ -130,12 +190,31 @@ body {
 	line-height: 35px;
 }
 
+@media (max-width: 1199px) {
+	.yu-xuan {
+		font-size: 46px !important;
+		/* margin: auto; */
+		text-align: center;
+		background-size: cover;
+	}
+
+	.yu-xuan-h2 {
+		font-size: 15px;
+		text-align: center;
+	}
+}
+
+.button-div {
+	margin: 0 !important;
+}
 .skill-button-div {
 	z-index: 100;
+	padding: 0 !important;
 }
 
 .skill-button {
-	width: 100%;
+	box-sizing: border-box;
+	width: 80%;
 	display: inline-block;
 	padding: 15px 25px;
 	border: 1px solid #2d2d2d;
@@ -253,8 +332,14 @@ body {
 	padding-left: 10px;
 }
 
+.works-card {
+	box-sizing: border-box;
+	/* margin: 20px; */
+}
 /* 作品集 */
 .works-body .card {
+	/* height: ; */
+	box-sizing: border-box;
 	border: 1px solid #2d2d2d !important;
 	padding: 0px 15px !important;
 }
@@ -289,6 +374,15 @@ body {
 }
 
 /* 作品集  下拉選單 */
+.works-body {
+	width: 100% !important;
+	margin: 20px auto !important;
+	padding-top: 15%;
+	padding-left: 0% !important;
+	padding-right: 0% !important;
+	padding-bottom: 6%;
+}
+
 .accordion-button {
 	border: 1px solid #2d2d2d !important;
 	border-radius: 5px !important;
@@ -324,7 +418,7 @@ body {
 }
 
 /*  技能 Skills  */
-.works-body,
+
 .skill-body {
 	width: 100% !important;
 	margin: 0 auto !important;
