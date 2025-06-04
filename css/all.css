@@ -518,6 +518,13 @@ body {
 	margin: 0 auto; /* 置中顯示 */
 }
 
+.responsive-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* 填滿容器並保持比例，可能會裁切 */
+  display: block; /* 避免空隙 */
+}
+
 .video-link video {
 	width: 100%;
 	height: auto;
@@ -525,7 +532,7 @@ body {
 }
 
 
-/* ------測試gsap------- */
+/* ------gsap------- */
 .timeline {
   position: relative;
   /* padding: 50px; */
