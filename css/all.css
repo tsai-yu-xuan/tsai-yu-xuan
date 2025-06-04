@@ -528,23 +528,60 @@ body {
 /* ------測試gsap------- */
 .timeline {
   position: relative;
-  padding: 50px;
+  /* padding: 50px; */
+	display: flex;
+	
 }
-
+.lineposition{
+	display: flex;
+  flex-direction: row-reverse;
+  
+}
 .line {
-  position: absolute;
-  top: 0;
-  left: 20px;
-  width: 4px;
+  display: flex;
+  flex-direction: row-reverse;
+  width: 8px;
   height: 100%;
-  background-color: #555;
+  background-color: rgb(172, 172, 172);
+	border-radius: 4px; /* 半徑為寬度的一半 */
+}
+.line-icon {
+  width: 50px;
+  height: 50px;
+  background-image: url(../img/work.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+
+  /* 技巧 1：使用 transform 平移圖示 */
+  transform: translateX(22px); /* 往左移出父容器 */
+
+  /* 技巧 2：或者使用負的 margin，也可以達到類似效果 */
+  /* margin-left: -30px; */
+
+  flex-shrink: 0; /* 防止圖示被壓縮 */
+}
+.timeline{
+	padding: 0px;
+}
+.work .card-body{
+	margin: 0px 50px;
+}
+.work .card-body .workYear{
+	display: inline-block;
+	border: 2px solid #555;
+	color: #f9f4ea;
+	padding: 5px;
+	margin: 8px 0px;
+	border-radius: 8px;
+	background: #555;
 }
 
-.event {
-  margin-left: 60px;
-  margin-bottom: 100px;
+.work {
+  margin-left: 0px;
+  margin-bottom: 0px;
   opacity: 0;
-  transform: translateY(50px);
+  transform: translateY(100px); /* ✅ 從下往上滑入 */
+  transition: all 0.5s ease; /* 這行可保留或移除，因為 GSAP 控制動畫 */
 }
 
 /* ------------------------ */
