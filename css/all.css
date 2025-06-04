@@ -524,6 +524,30 @@ body {
 	max-width: 100%;
 }
 
+
+/* ------測試gsap------- */
+.timeline {
+  position: relative;
+  padding: 50px;
+}
+
+.line {
+  position: absolute;
+  top: 0;
+  left: 20px;
+  width: 4px;
+  height: 100%;
+  background-color: #555;
+}
+
+.event {
+  margin-left: 60px;
+  margin-bottom: 100px;
+  opacity: 0;
+  transform: translateY(50px);
+}
+
+/* ------------------------ */
 /* 
 奶白色#f9f4ea
 棕色 #cdad85 
