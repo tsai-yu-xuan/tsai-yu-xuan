@@ -10,7 +10,9 @@
 
 
 <hr>
- <a align="center" href="https://github.com/tsai-yu-xuan">![github](https://img.shields.io/badge/GitHub-000000?style=for-the-badge&logo=GitHub&logoColor=white) </a>
+ <a align="center" href="https://github.com/tsai-yu-xuan">![github](https://img.shields.io/badge/GitHub-000000?style=for-the-badge&logo=GitHub&logoColor=white)] </a>
+
+ 
 
 ### Languages and Tools:
 <p align="left">
