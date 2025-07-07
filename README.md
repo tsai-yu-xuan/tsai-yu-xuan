@@ -3,14 +3,11 @@
 <h3 align="center">前端網頁工程師 Front-End Developer</h3>
 - 🌱 我是一位充滿熱忱的初階前端開發工程師，擁有約九個月的前端實務經驗。
 
-- 👨‍💻 我的作品集:  
-  <a href="https://tsai-yu-xuan.github.io/tsai-yu-xuan/" target="_blank">進入我的作品集（內有專題及工作經驗）</a>
+- 👨‍💻 我的作品集: <a href="https://tsai-yu-xuan.github.io/tsai-yu-xuan/" target="_blank">進入我的作品集（內有專題及工作經驗）</a>
 
-- 👨‍💻 專題 - 鼠兔永恆居所-前端 (獨立製作):  
-  <a href="https://github.com/tsai-yu-xuan/vuetify-shop-front" target="_blank">進入專題 - 鼠兔永恆居所-前端 (獨立製作)github</a>
+- 👨‍💻 專題 - 鼠兔永恆居所-前端 (獨立製作): <a href="https://github.com/tsai-yu-xuan/vuetify-shop-front" target="_blank">進入專題 - 鼠兔永恆居所-前端 (獨立製作)github</a>
 
-- 👨‍💻 專題 - 鼠兔永恆居所-後端 (老師帶著做):  
-  <a href="https://github.com/tsai-yu-xuan/vuetify-shop-back" target="_blank">進入專題 - 鼠兔永恆居所-後端 (老師帶著做)github</a>
+- 👨‍💻 專題 - 鼠兔永恆居所-後端 (老師帶著做): <a href="https://github.com/tsai-yu-xuan/vuetify-shop-back" target="_blank">進入專題 - 鼠兔永恆居所-後端 (老師帶著做)github</a>
 - 
 
 - 📫 歡迎聯絡我 **a0986881609@gmail.com**
