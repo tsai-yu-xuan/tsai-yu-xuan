@@ -6,7 +6,7 @@ const fullText = textElement.textContent;
   textElement.textContent = ""; // 先清空內容
 
 gsap.to({}, {
-  duration: 3,
+  duration: 2,
   repeat: -1,          // 重複播放
   repeatDelay: 1,      // 每次打完後停一秒再重播
     onUpdate: function () {
