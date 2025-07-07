@@ -61,8 +61,8 @@
       <div class="col-lg-12  col-xl-7 p-3">
         <div class="container-right-top">
           <h1 class="yu-xuan" data-aos="fade-up">Hi I’m Yu-Xuan!</h1>
-          <h2 class="yu-xuan-h2 text-chinese">我是 前端網頁設計工程師<br>
-            充滿熱忱的前端開發者，具設計背景，融合創意與技術於開發中</h2>
+          <h2 class="yu-xuan-h2 text-chinese ">我是 <span class="typing-text">前端網頁設計工程師</span></h2>
+          <h2 class="yu-xuan-h2 text-chinese">充滿熱忱的前端開發者，具設計背景，融合創意與技術於開發中</h2>
         </div>
         <div class="row button-div">
           <div class="col-6 d-flex justify-content-center skill-button-div">
@@ -1461,40 +1461,7 @@ handleKeydown(event) {
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
     <!-- ScrollTrigger 外掛 -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
-    <script>
-      AOS.init(); // AOS 動畫
-
-      gsap.registerPlugin(ScrollTrigger);
-      // 移動圖示，模擬沿著線向下滑動
-      gsap.to(".line-icon", {
-          y: 900, // 沿著 line 垂直移動
-          scrollTrigger: {
-            trigger: ".timeline", // 根據你的 scroll 區域調整
-            start: "top 30%",
-            end: "bottom 50%",
-            scrub: true, // 平滑跟隨 scroll
-            // markers: true
-          }
-        });
-      gsap.utils.toArray(".work").forEach((el) => {
-        gsap.fromTo(el,
-          { opacity: 0, y: 100 },
-          {
-            opacity: 1,
-            y: 0,
-            ease: "power2.out",
-            scrollTrigger: {
-              trigger: el,
-              start: "top 80%",
-              end: "+=300",
-              scrub: 1,
-              // markers: true
-            }
-          }
-        );
-      });
-
-    </script>
+    <script src="./js/all.js"></script>
 </body>
 
 </html>
